@@ -1,0 +1,74 @@
+.reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.reviews__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  border: 2px solid var(--border);
+  border-left: 3px solid var(--red);
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, #fafbfd 0%, var(--white) 100%);
+}
+
+.reviews__quote {
+  margin: 0;
+}
+
+.reviews__quote p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--text);
+  line-height: 1.75;
+  font-style: italic;
+}
+
+.reviews__quote p::before {
+  content: '\201C';
+  color: var(--red);
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 0;
+  margin-right: 0.15rem;
+  vertical-align: -0.2rem;
+}
+
+.reviews__author {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.reviews__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue), var(--blue-light));
+  color: var(--white);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.reviews__name {
+  display: block;
+  font-style: normal;
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.reviews__location {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin-top: 0.125rem;
+}

@@ -1,0 +1,433 @@
+.nago {
+  background: var(--white);
+  overflow: hidden;
+}
+
+.nago__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.75rem;
+}
+
+.nago__label::after {
+  content: '';
+  width: 28px;
+  height: 2px;
+  background: var(--red);
+  border-radius: 2px;
+}
+
+.nago__label--center {
+  display: flex;
+  justify-content: center;
+}
+
+.nago__label--center::before {
+  content: '';
+  width: 28px;
+  height: 2px;
+  background: var(--red);
+  border-radius: 2px;
+}
+
+.nago__title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 900;
+  color: var(--blue);
+  margin: 0 0 1rem;
+  line-height: 1.1;
+}
+
+.nago__lead {
+  font-size: clamp(1rem, 1.8vw, 1.125rem);
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.55;
+  margin: 0 0 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--blue);
+}
+
+.nago__body {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* Intro */
+.nago__intro {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: 3rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem clamp(1.5rem, 5vw, 3rem) 5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.nago__intro-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nago__logo {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  object-fit: contain;
+}
+
+.nago__intro-text {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.nago__intro-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--red), var(--blue));
+  border-radius: 3px;
+}
+
+/* Founder */
+.nago__founder {
+  background: linear-gradient(180deg, #fafbfd 0%, var(--white) 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.nago__founder-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem clamp(1.5rem, 5vw, 3rem);
+  align-items: center;
+}
+
+.nago__founder-media {
+  display: flex;
+  justify-content: center;
+}
+
+.nago__founder-frame {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 20px 50px rgba(26, 58, 143, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.nago__founder-frame::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, var(--blue), var(--red));
+}
+
+.nago__founder-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.nago__founder-name {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 900;
+  color: var(--blue);
+  margin: 0 0 1rem;
+}
+
+/* Genealogy */
+.nago__genealogy {
+  padding: 4.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.nago__genealogy-inner {
+  text-align: center;
+}
+
+.nago__genealogy-title {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 900;
+  color: var(--blue);
+  margin: 0 0 0.5rem;
+}
+
+.nago__genealogy-subtitle {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin: 0 0 2.5rem;
+}
+
+.nago__tree {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.nago__tree-root {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.nago__tree-line {
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(180deg, var(--blue), var(--red));
+  margin: 0 auto;
+}
+
+.nago__tree-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  padding-top: 1rem;
+}
+
+.nago__tree-row::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: var(--border);
+}
+
+.nago__tree-node {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-top: 3px solid var(--blue);
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--blue);
+  min-width: 140px;
+  text-align: center;
+}
+
+.nago__tree-node::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  width: 2px;
+  height: 1rem;
+  background: var(--border);
+  transform: translateX(-50%);
+}
+
+.nago__tree-node--root {
+  border-top-color: var(--red);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  padding: 1rem 1.75rem;
+}
+
+.nago__tree-node--root::before {
+  display: none;
+}
+
+.nago__tree-node--support {
+  border-top-color: var(--red);
+}
+
+.nago__tree-node--placeholder {
+  border-style: dashed;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+/* Cords */
+.nago__cords {
+  background: linear-gradient(180deg, #fafbfd 0%, var(--white) 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.nago__cords-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4.5rem clamp(1.5rem, 5vw, 3rem);
+}
+
+.nago__cords-title {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 900;
+  color: var(--blue);
+  margin: 0 0 1rem;
+}
+
+.nago__cords-paragraph + .nago__cords-paragraph {
+  margin-top: 1rem;
+}
+
+.nago__cords-steps {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.nago__cords-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(26, 58, 143, 0.05), rgba(214, 40, 40, 0.04));
+  border-left: 3px solid var(--blue);
+  border-radius: 0 10px 10px 0;
+}
+
+.nago__cords-step strong {
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.nago__cords-step span {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.nago__cords-media {
+  display: flex;
+  justify-content: center;
+}
+
+.nago__cords-frame {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow:
+    0 20px 50px rgba(26, 58, 143, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.nago__cords-frame::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, var(--blue), var(--red));
+}
+
+.nago__cords-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Video */
+.nago__video {
+  padding: 4.5rem 0 5rem;
+  text-align: center;
+}
+
+.nago__video-title {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 900;
+  color: var(--blue);
+  margin: 0 0 0.5rem;
+}
+
+.nago__video-subtitle {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  line-height: 1.65;
+}
+
+.nago__video-player {
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 12px 40px rgba(26, 58, 143, 0.15);
+}
+
+@media (max-width: 900px) {
+  .nago__intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 3.5rem;
+  }
+
+  .nago__logo {
+    max-width: 340px;
+  }
+
+  .nago__intro-text {
+    padding-left: 0;
+  }
+
+  .nago__intro-text::before {
+    display: none;
+  }
+
+  .nago__founder-split {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+  }
+
+  .nago__founder-frame {
+    max-width: 100%;
+  }
+
+  .nago__tree-row::before {
+    display: none;
+  }
+
+  .nago__tree-node::before {
+    display: none;
+  }
+
+  .nago__cords-split {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+  }
+
+  .nago__cords-media {
+    order: -1;
+  }
+
+  .nago__cords-frame {
+    max-width: 100%;
+  }
+
+  .nago__cords-text .nago__lead {
+    padding-left: 0;
+    border-left: none;
+  }
+}

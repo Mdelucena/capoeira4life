@@ -1,0 +1,340 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "capoeiraNago": "Capoeira Nagô",
+    "capoeirinha": "O Capoeirinha",
+    "services": "Servicios",
+    "masters": "Maestros",
+    "academy": "Academia",
+    "bookClass": "Reservar Clase"
+  },
+  "hero": {
+    "label": "Bienvenido",
+    "title": "Capoeira4Life",
+    "subtitle": "Valores, misión y visión de Capoeira4Life",
+    "videoPlaceholder": "Vídeo de fondo"
+  },
+  "academy": {
+    "label": "La Academia",
+    "title": "Capoeira4Life en Londres",
+    "lead": "Capoeira auténtica en un espacio acogedor, con maestros especializados guiando cada roda.",
+    "imageAlt": "Clases de capoeira en la academia Capoeira4Life en Londres",
+    "body": [
+      "Capoeira4Life ofrece clases regulares en nuestra academia en Londres, abiertas a principiantes y capoeiristas con experiencia. La capoeira se enseña con respeto por las raíces afrobrasileñas, uniendo movimiento, música, cultura y comunidad.",
+      "Nuestros maestros son especialistas en técnica, musicalidad, capoeira infantil, acondicionamiento físico y las tradiciones de Capoeira Nagô. Cada uno aporta años de experiencia para ayudarte a crecer a tu ritmo.",
+      "Ya sea para empezar, entrenar condicionamiento, conectar con la cultura brasileña o probar algo nuevo: hay un lugar para ti en nuestra roda."
+    ],
+    "highlights": [
+      {
+        "title": "Maestros especializados",
+        "text": "Profesores cualificados con profundo conocimiento de la capoeira, desde lo básico al juego avanzado."
+      },
+      {
+        "title": "Clases en la academia",
+        "text": "Sesiones estructuradas en un espacio de entrenamiento adecuado, con seguridad y progresión."
+      },
+      {
+        "title": "Todas las edades",
+        "text": "Del programa infantil Capoeirinha a las clases para adultos, todos son bienvenidos."
+      }
+    ]
+  },
+  "about": {
+    "titleLine1": "Sobre",
+    "titleLine2": "Capoeira4Life",
+    "title": "Sobre Capoeira4Life",
+    "values": "Valores",
+    "mission": "Misión",
+    "vision": "Visión",
+    "valuesText": "Respeto por las raíces afrobrasileñas, inclusión en la roda, disciplina con alegría y comunidad por encima de todo.",
+    "missionText": "Llevar la capoeira a todas las personas, formando capoeiristas completos y preservando la cultura con maestros especializados.",
+    "visionText": "Ser referencia en la capoeira, uniendo tradición e innovación, en Londres y en el mundo."
+  },
+  "nago": {
+    "label": "Nuestro grupo",
+    "title": "Capoeira Nagô",
+    "lead": "Preservando tradiciones afrobrasileñas y llevando la capoeira al mundo desde 2002.",
+    "body": "Fundada en Goiânia por el Mestre Pequinês con el apoyo del Mestre Suíno, la Capoeira Nagô Sports Associação honra las raíces yorubá del arte. El nombre \"Nagô\" hace referencia a los pueblos africanos que dieron forma a la capoeira en Brasil. Hoy el grupo está presente en todo el país y en el exterior, equilibrando deporte de alto rendimiento con musicalidad, respeto mutuo e inclusión social.",
+    "founder": {
+      "label": "Fundador",
+      "name": "Mestre Pequinês",
+      "text": "El Mestre Pequinês fundó la Capoeira Nagô en 2002 con la misión de mantener vivas las raíces ancestrales mientras transforma vidas a través de la capoeira. Su trabajo social llega a más de 1.500 niños en comunidades vulnerables, usando el arte como herramienta de educación, inclusión y ciudadanía.",
+      "imageAlt": "Mestre Pequinês, fundador de Capoeira Nagô"
+    },
+    "genealogy": {
+      "label": "Linaje",
+      "title": "Árbol Genealógico",
+      "subtitle": "Maestros graduados en orden de formación",
+      "root": "Mestre Pequinês",
+      "support": "Mestre Suíno",
+      "nodes": [],
+      "placeholder": "Más maestros próximamente"
+    },
+    "cords": {
+      "label": "Graduación",
+      "title": "Cambio de Cordones",
+      "lead": "En la capoeira, la evolución del alumno se marca con cordones: cintas de tela o cuerda que simbolizan el nivel de conocimiento, responsabilidad y dedicación al arte.",
+      "body": [
+        "A diferencia de otras artes marciales, la capoeira usa cordones en lugar de cinturones rígidos. Cada color representa una etapa en el camino del capoeirista, desde el alumno principiante hasta el maestro. En Capoeira Nagô, el sistema oficial incluye trayectorias específicas para adultos, niños (5 a 10 años) y jóvenes (11 a 14 años), como muestra la tabla.",
+        "El cambio de cordón no depende solo del tiempo de entrenamiento. El maestro o profesor evalúa la evolución técnica, la musicalidad, el conocimiento de la historia y los rituales, la conducta dentro y fuera de la roda y el respeto por la tradición. Cada alumno avanza a su propio ritmo.",
+        "La ceremonia de cambio es un momento festivo y solemne: reunimos a la familia, amigos y toda la roda. El capoeirista juega, canta y demuestra lo aprendido. Al recibir el nuevo cordón, asume también nuevas responsabilidades dentro del grupo."
+      ],
+      "steps": [
+        {
+          "title": "Preparación continua",
+          "text": "El alumno entrena, participa en las rodas y absorbe la cultura de la capoeira en cada clase."
+        },
+        {
+          "title": "Evaluación del maestro",
+          "text": "Técnica, musicalidad, conducta y conocimiento cultural se observan antes de cada cambio."
+        },
+        {
+          "title": "Ceremonia en la roda",
+          "text": "La entrega del nuevo cordón ocurre en un evento colectivo, con juegos, cantos y celebración de la comunidad."
+        }
+      ],
+      "imageAlt": "Sistema oficial de graduación de Capoeira Nagô, con cordones por nivel y grupo de edad"
+    },
+    "video": {
+      "label": "Enseñanza",
+      "title": "Método de Enseñanza Capoeira Nagô",
+      "subtitle": "Conoce cómo el Mestre Pequinês conduce la formación y transmite la tradición del grupo.",
+      "placeholder": "Vídeo próximamente"
+    }
+  },
+  "capoeirinha": {
+    "intro": {
+      "label": "Proyecto Capoeira4Life",
+      "title": "O Capoeirinha",
+      "lead": "Capoeira para los pequeños: diversión, movimiento y cultura desde temprano.",
+      "body": "O Capoeirinha es una iniciativa de Capoeira4Life creada para acercar la capoeira a los niños de forma lúdica, segura e inspiradora. A través de juegos, música y movimiento, los pequeños aprenden coordinación, respeto, confianza y las raíces culturales de este arte brasileño, todo mientras se divierten.",
+      "highlights": ["Diversión", "Movimiento", "Cultura", "Respeto"]
+    },
+    "about": {
+      "label": "El proyecto",
+      "title": "Conoce a O Capoeirinha",
+      "avatarText": "O Capoeirinha es nuestra mascota amigable: un joven capoeirista que guía a los niños en cada movimiento, haciendo que el aprendizaje sea una aventura. Colorido, lleno de energía y personalidad, representa la alegría y la libertad que la capoeira trae a los pequeños.",
+      "avatarAlt": "Mascota O Capoeirinha, Capoeira Nagô",
+      "features": [
+        {
+          "title": "Aprendizaje lúdico",
+          "text": "Juegos, música e historias en cada clase: capoeira enseñada como los niños aprenden mejor."
+        },
+        {
+          "title": "Seguro y adaptado",
+          "text": "Movimientos pensados para cada edad, con acompañamiento y cuidado en cada paso."
+        },
+        {
+          "title": "Cultura brasileña",
+          "text": "Raíces afrobrasileñas, ritmo y respeto presentes en cada lección desde el inicio."
+        }
+      ]
+    },
+    "moves": {
+      "label": "Aprende",
+      "title": "Golpes de Capoeira",
+      "subtitle": "Desliza por los golpes y aprende con O Capoeirinha",
+      "prev": "Golpe anterior",
+      "next": "Siguiente golpe",
+      "photoPlaceholder": "Foto: {{move}}",
+      "items": [
+        {
+          "id": "ginga",
+          "name": "Ginga",
+          "description": "El movimiento base de la capoeira: un balanceo rítmico de un lado a otro que enseña equilibrio, fluidez y preparación para cualquier golpe."
+        },
+        {
+          "id": "au",
+          "name": "Au",
+          "description": "Una estrella con los brazos abiertos. Desarrolla coordinación, conciencia espacial y el valor de moverse libremente."
+        },
+        {
+          "id": "macaquinho",
+          "name": "Macaquinho",
+          "description": "Movimiento bajo, cerca del suelo, como un monito. Trabaja agilidad, fuerza en los brazos y diversión en el movimiento."
+        },
+        {
+          "id": "negativa",
+          "name": "Negativa",
+          "description": "Una esquiva baja de defensa, apoyando las manos en el suelo. Enseña protección, reflejos y cómo escapar con astucia."
+        },
+        {
+          "id": "ponte",
+          "name": "Ponte",
+          "description": "Posición de puente con el cuerpo arqueado. Fortalece brazos, piernas y columna, ¡un gran desafío divertido para los pequeños!"
+        }
+      ]
+    },
+    "video": {
+      "label": "Ver",
+      "title": "¿Cómo Funciona una Clase?",
+      "subtitle": "Mira cómo los profesores conducen cada encuentro de Capoeirinha",
+      "lead": "Las clases de Capoeirinha están pensadas para que cada niño aprenda a su ritmo, con paciencia, cariño y mucha diversión.",
+      "points": [
+        {
+          "title": "Enseñanza lúdica",
+          "text": "Los profesores usan juegos, música e historias para explicar cada movimiento de forma simple y divertida."
+        },
+        {
+          "title": "Material de casa",
+          "text": "Objetos cotidianos y juguetes traídos a clase ayudan a los niños a asimilar los golpes paso a paso."
+        },
+        {
+          "title": "Acogida total",
+          "text": "Cada niño a su ritmo, ganando confianza en el cuerpo y sintiéndose en casa desde la primera clase."
+        }
+      ],
+      "placeholder": "Vídeo próximamente"
+    },
+    "graduation": {
+      "label": "Graduaciones",
+      "title": "Cordones para Niños y Adolescentes",
+      "lead": "La graduación en Capoeirinha reconoce el esfuerzo, la evolución técnica y el respeto por la cultura de la capoeira.",
+      "body": [
+        "Niños y adolescentes conquistan cordones a medida que evolucionan en clase. Cada color representa una etapa de aprendizaje, desde los primeros pasos hasta movimientos más avanzados.",
+        "Las evaluaciones consideran participación, respeto, musicalidad y dominio de los fundamentos, no solo la habilidad física. Cada niño crece a su propio ritmo.",
+        "Los adolescentes siguen un camino progresivo que los prepara para el sistema de graduación adulto, manteniendo los mismos valores de disciplina e identidad cultural."
+      ],
+      "steps": [
+        {
+          "title": "Evolución progresiva",
+          "text": "Cada cordón representa un nuevo desafío superado con dedicación en clase."
+        },
+        {
+          "title": "Criterios justos",
+          "text": "Comportamiento, asistencia y amor por la capoeira cuentan tanto como la técnica."
+        },
+        {
+          "title": "Ritual de celebración",
+          "text": "Las ceremonias de graduación son momentos festivos con familia, amigos y toda la roda."
+        }
+      ],
+      "imageAlt": "Niño graduado con cordón de capoeira, Capoeira Nagô"
+    },
+    "form": {
+      "label": "Clase experimental",
+      "title": "¡Ven a hacer una clase experimental!",
+      "subtitle": "Inscribe a los pequeños y descubre la capoeira en la práctica: juegos, música y movimiento. Los padres pueden completar los datos abajo.",
+      "age": "Edad",
+      "agePlaceholder": "ej: 8",
+      "height": "Altura (cm)",
+      "heightPlaceholder": "ej: 130",
+      "weight": "Peso (kg)",
+      "weightPlaceholder": "ej: 28",
+      "sex": "Sexo",
+      "sexOptions": {
+        "placeholder": "Selecciona",
+        "male": "Masculino",
+        "female": "Femenino",
+        "other": "Prefiero no decir"
+      },
+      "martialArts": "¿Ya practica algún arte marcial?",
+      "martialArtsOptions": {
+        "placeholder": "Selecciona",
+        "yes": "Sí",
+        "no": "No"
+      },
+      "martialArtsWhich": "¿Cuál arte marcial?",
+      "martialArtsWhichPlaceholder": "ej: Jiu-jitsu, karate...",
+      "submit": "Quiero la clase experimental",
+      "success": "¡Inscripción recibida! Pronto nos pondremos en contacto para agendar la clase experimental."
+    }
+  },
+  "history": {
+    "label": "Historia",
+    "title": "La Capoeira",
+    "lead": "Arte marcial, danza y cultura nacida de la resistencia de los pueblos africanos en Brasil.",
+    "body": "Creada en el período colonial como forma de resistencia física y cultural, la capoeira disimulaba golpes con música, danza y ritmo para escapar de la vigilancia en las haciendas. Prohibida tras la abolición en 1888, solo fue legitimada en la década de 1930, cuando Mestre Bimba fundó la Capoeira Regional y Mestre Pastinha codificó la Capoeira Angola. En 2014, la Unesco reconoció la Roda de Capoeira como Patrimonio Cultural Inmaterial de la Humanidad.",
+    "cta": "Conoce a los Maestros",
+    "imageAlt": "Roda de capoeira con practicantes en movimiento"
+  },
+  "masters": {
+    "label": "Legado",
+    "title": "Maestros Pioneros",
+    "bimba": "Mestre Bimba",
+    "bimbaFullName": "Manuel dos Reis Machado",
+    "bimbaStyle": "Capoeira Regional",
+    "bimbaText": "Mestre Bimba revolucionó el arte al crear la Capoeira Regional en la década de 1930. Transformó la práctica en un método disciplinado de defensa personal, introduciendo uniformes blancos, reglas estrictas y la primera metodología de enseñanza. En 1937, tras presentarse ante el presidente Getúlio Vargas, legalizó la capoeira como deporte nacional. Su estilo se caracteriza por un juego rápido, alto, atlético y centrado en la eficiencia de los golpes.",
+    "bimbaImageAlt": "Mestre Bimba, creador de la Capoeira Regional",
+    "pastinha": "Mestre Pastinha",
+    "pastinhaFullName": "Vicente Ferreira Pastinha",
+    "pastinhaStyle": "Capoeira Angola",
+    "pastinhaText": "Mestre Pastinha se convirtió en el gran guardián de la Capoeira Angola, el estilo tradicional. En 1941, fundó su escuela oficial para preservar las raíces africanas, la ritualística y la filosofía del arte. Defendía que la capoeira era una danza de astucia y estrategia, jugada de forma más lenta, cadenciada y cerca del suelo. También estandarizó el uniforme de sus alumnos con los colores negro y amarillo.",
+    "pastinhaImageAlt": "Mestre Pastinha, guardián de la Capoeira Angola"
+  },
+  "partnerships": {
+    "title": "Alianzas",
+    "empty": "Ninguna alianza por el momento."
+  },
+  "reviews": {
+    "title": "Opiniones de Alumnos",
+    "items": [
+      {
+        "name": "James Mitchell",
+        "location": "Londres, Inglaterra",
+        "text": "Empecé capoeira desde cero y me sentí bienvenido desde el primer día. Los profesores lo explican todo con calma, la música te mete en la roda, y gané condición y confianza que no esperaba."
+      },
+      {
+        "name": "Sarah Thompson",
+        "location": "Londres, Inglaterra",
+        "text": "A mi hijo le encanta Capoeirinha y yo acabé entrando en las clases de adultos también. Es una comunidad de verdad: acogedora, respetuosa y divertida. La mejor decisión del año."
+      },
+      {
+        "name": "Lucas Ferreira",
+        "location": "São Paulo, Brasil",
+        "text": "Soy brasileño y pensé que iba a extrañar la capoeira de casa. En Capoeira4Life encontré raíz, respeto y una roda de verdad. Parece Salvador, pero en Londres."
+      }
+    ]
+  },
+  "bookClass": {
+    "title": "Reserva Tu Clase",
+    "subtitle": "¿Quieres probar la capoeira? Completa el formulario y nos pondremos en contacto para agendar tu primera clase.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre completo",
+      "email": "Email",
+      "emailPlaceholder": "ejemplo@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "ej: +44 7XXX XXX XXX",
+      "classType": "Tipo de clase",
+      "classTypeOptions": {
+        "placeholder": "Selecciona una opción",
+        "adult": "Clases para adultos",
+        "capoeirinha": "Capoeirinha (niños)",
+        "unsure": "Aún no estoy seguro"
+      },
+      "message": "Mensaje",
+      "messagePlaceholder": "Horario preferido, experiencia previa u otras dudas (opcional)",
+      "submit": "Quiero reservar una clase",
+      "success": "¡Solicitud recibida! Pronto nos pondremos en contacto para agendar tu clase."
+    }
+  },
+  "whatsapp": {
+    "label": "Hablar por WhatsApp"
+  },
+  "footer": {
+    "exploreTitle": "Explorar",
+    "contactTitle": "Contáctanos",
+    "contactHint": "Preguntas sobre clases, eventos o alianzas.",
+    "email": "capoeiralifelondon@gmail.com",
+    "locationTitle": "Dónde estamos",
+    "locationText": "Encuentra la academia más cercana.",
+    "followUs": "Síguenos en redes sociales",
+    "rights": "Capoeira4Life | Copyright {{year}} © Todos los derechos reservados",
+    "nagoAlt": "Capoeira Nagô"
+  },
+  "common": {
+    "comingSoon": "Contenido próximamente",
+    "photo": "Foto"
+  },
+  "language": {
+    "label": "Idioma",
+    "pt": "Português",
+    "en": "English",
+    "es": "Español"
+  },
+  "a11y": {
+    "openMenu": "Abrir menú",
+    "logoAlt": "Capoeira4Life"
+  }
+}

@@ -1,0 +1,13 @@
+.book-class {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+}
+
+.book-class__subtitle {
+  max-width: 640px;
+  margin: -0.5rem auto 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}

@@ -1,0 +1,227 @@
+.masters {
+  background: var(--white);
+  padding: 5rem 0 0;
+  overflow: hidden;
+}
+
+.masters__intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 3.5rem;
+  padding: 0 1.5rem;
+}
+
+.masters__section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.75rem;
+}
+
+.masters__section-label::before,
+.masters__section-label::after {
+  content: '';
+  width: 24px;
+  height: 2px;
+  background: var(--red);
+  border-radius: 2px;
+}
+
+.masters__section-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 900;
+  color: var(--blue);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.masters__block {
+  padding: 3.5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.masters__block--reverse {
+  background: linear-gradient(180deg, #fafbfd 0%, var(--white) 100%);
+}
+
+.masters__split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.masters__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 2rem clamp(1.5rem, 5vw, 5rem);
+  position: relative;
+}
+
+.masters__block:not(.masters__block--reverse) .masters__text {
+  padding-left: clamp(1.5rem, 6vw, 6rem);
+}
+
+.masters__block:not(.masters__block--reverse) .masters__text::before {
+  content: '';
+  position: absolute;
+  left: clamp(1.5rem, 6vw, 6rem);
+  top: 2rem;
+  bottom: 2rem;
+  width: 3px;
+  background: linear-gradient(180deg, var(--blue), var(--red));
+  border-radius: 3px;
+  transform: translateX(calc(-1.5rem - 3px));
+}
+
+.masters__block--reverse .masters__text {
+  padding-right: clamp(1.5rem, 6vw, 6rem);
+}
+
+.masters__block--reverse .masters__text::before {
+  content: '';
+  position: absolute;
+  right: clamp(1.5rem, 6vw, 6rem);
+  top: 2rem;
+  bottom: 2rem;
+  width: 3px;
+  background: linear-gradient(180deg, var(--red), var(--blue));
+  border-radius: 3px;
+  transform: translateX(calc(1.5rem + 3px));
+}
+
+.masters__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.masters__style {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.masters__name {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 900;
+  color: var(--blue);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.masters__full-name {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin: 0;
+  font-style: italic;
+}
+
+.masters__body {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin: 0;
+  max-width: 520px;
+}
+
+.masters__media {
+  padding: 2rem clamp(1.5rem, 4vw, 4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.masters__frame {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 20px 50px rgba(26, 58, 143, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.masters__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 5 / 6;
+  object-fit: cover;
+  object-position: center top;
+  filter: grayscale(15%);
+  transition: transform 0.6s ease, filter 0.4s ease;
+}
+
+.masters__frame:hover .masters__image {
+  transform: scale(1.03);
+  filter: grayscale(0%);
+}
+
+.masters__accent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--blue), var(--red));
+}
+
+@media (max-width: 900px) {
+  .masters {
+    padding-top: 3.5rem;
+  }
+
+  .masters__intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .masters__block {
+    padding: 2.5rem 0;
+  }
+
+  .masters__split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .masters__block--reverse .masters__split {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .masters__block--reverse .masters__media {
+    order: -1;
+  }
+
+  .masters__text {
+    padding: 0 1.5rem !important;
+  }
+
+  .masters__text::before {
+    display: none !important;
+  }
+
+  .masters__media {
+    padding: 0 1.5rem;
+  }
+
+  .masters__frame {
+    max-width: 100%;
+  }
+
+  .masters__body {
+    max-width: none;
+  }
+}
