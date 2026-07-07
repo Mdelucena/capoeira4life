@@ -1,5 +1,7 @@
+import type { Language } from '../i18n'
+
 type FlagIconProps = {
-  code: 'pt' | 'en' | 'es'
+  code: Language
 }
 
 export default function FlagIcon({ code }: FlagIconProps) {
@@ -14,15 +16,12 @@ export default function FlagIcon({ code }: FlagIconProps) {
       )
     case 'en':
       return (
-        <svg viewBox="0 0 32 24" aria-hidden="true" className="header__flag">
-          <rect width="32" height="24" fill="#B22234" />
-          <rect y="2" width="32" height="2" fill="#fff" />
-          <rect y="6" width="32" height="2" fill="#fff" />
-          <rect y="10" width="32" height="2" fill="#fff" />
-          <rect y="14" width="32" height="2" fill="#fff" />
-          <rect y="18" width="32" height="2" fill="#fff" />
-          <rect y="22" width="32" height="2" fill="#fff" />
-          <rect width="14" height="13" fill="#3C3B6E" />
+        <svg viewBox="0 0 60 30" aria-hidden="true" className="header__flag">
+          <rect width="60" height="30" fill="#012169" />
+          <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6" />
+          <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" strokeWidth="4" />
+          <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10" />
+          <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth="6" />
         </svg>
       )
     case 'es':
@@ -30,6 +29,14 @@ export default function FlagIcon({ code }: FlagIconProps) {
         <svg viewBox="0 0 32 24" aria-hidden="true" className="header__flag">
           <rect width="32" height="24" fill="#AA151B" />
           <rect y="6" width="32" height="12" fill="#F1BF00" />
+        </svg>
+      )
+    case 'it':
+      return (
+        <svg viewBox="0 0 32 24" aria-hidden="true" className="header__flag">
+          <rect width="10.67" height="24" fill="#009246" />
+          <rect x="10.67" width="10.66" height="24" fill="#fff" />
+          <rect x="21.33" width="10.67" height="24" fill="#CE2B37" />
         </svg>
       )
   }

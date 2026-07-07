@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import CapoeiraNagoSection from '../components/sections/CapoeiraNagoSection'
+import BookClassSection from '../components/sections/BookClassSection'
 
 export default function CapoeiraNagoPage() {
   return (
@@ -8,6 +9,7 @@ export default function CapoeiraNagoPage() {
       <Header />
       <main>
         <CapoeiraNagoSection />
+        <BookClassSection />
       </main>
       <Footer />
     </>

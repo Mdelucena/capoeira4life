@@ -133,6 +133,59 @@
   align-self: stretch;
 }
 
+.history__gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 580px;
+}
+
+.history__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  background: rgba(26, 58, 143, 0.82);
+  color: var(--white);
+  font-size: 1.125rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.history__arrow:hover {
+  background: var(--blue);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.history__arrow--prev {
+  left: 1rem;
+}
+
+.history__arrow--next {
+  right: 1rem;
+}
+
+.history__counter {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 2;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  background: rgba(26, 58, 143, 0.78);
+  border-radius: 999px;
+}
+
 .history__media::before {
   content: '';
   position: absolute;
@@ -154,27 +207,47 @@
   min-height: 580px;
   object-fit: cover;
   object-position: center 35%;
+  animation: history-image-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes history-image-in {
+  from {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 900px) {
   .history__split {
     grid-template-columns: 1fr;
     min-height: unset;
+    gap: 0;
   }
 
   .history__text {
     order: 2;
-    padding: 2.5rem 1.5rem 3.5rem;
+    padding: 1.25rem 1.5rem 2rem;
     max-width: none;
     justify-self: auto;
+    gap: 1.125rem;
   }
 
   .history__text::before {
     display: none;
   }
 
+  .history__gallery {
+    min-height: unset;
+  }
+
   .history__media {
     order: 1;
+    min-height: unset;
+    height: auto;
   }
 
   .history__media::before {
@@ -186,11 +259,26 @@
   }
 
   .history__image {
-    min-height: 320px;
-    max-height: 420px;
+    min-height: unset;
+    max-height: none;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-position: center;
   }
 
   .history__body {
     max-width: none;
+  }
+
+  .history__arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .history__image {
+    animation: none;
   }
 }

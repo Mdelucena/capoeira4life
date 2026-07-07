@@ -3,8 +3,9 @@ import { initReactI18next } from 'react-i18next'
 import pt from './locales/pt.json'
 import en from './locales/en.json'
 import es from './locales/es.json'
+import it from './locales/it.json'
 
-export const languages = ['en', 'pt', 'es'] as const
+export const languages = ['en', 'pt', 'es', 'it'] as const
 export type Language = (typeof languages)[number]
 
 const STORAGE_KEY = 'capoeira4life-lang'
@@ -23,6 +24,7 @@ i18n.use(initReactI18next).init({
     pt: { translation: pt },
     en: { translation: en },
     es: { translation: es },
+    it: { translation: it },
   },
   lng: getSavedLanguage(),
   fallbackLng: 'en',

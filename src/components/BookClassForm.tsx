@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
+import { formatWhatsAppField, openWhatsAppMessage } from '../utils/whatsappForm'
 import './BookClassForm.css'
 
 type FormData = {
@@ -27,8 +28,36 @@ export default function BookClassForm() {
     setForm((prev) => ({ ...prev, [field]: value }))
   }
 
+  function getClassTypeLabel(value: string) {
+    const labels: Record<string, string> = {
+      adult: t('bookClass.form.classTypeOptions.adult'),
+      capoeirinha: t('bookClass.form.classTypeOptions.capoeirinha'),
+      unsure: t('bookClass.form.classTypeOptions.unsure'),
+    }
+    return labels[value] ?? value
+  }
+
+  function buildWhatsAppMessage(data: FormData) {
+    const lines = [
+      t('bookClass.form.whatsappIntro'),
+      '',
+      formatWhatsAppField(t('bookClass.form.name'), data.name),
+      formatWhatsAppField(t('bookClass.form.email'), data.email),
+      formatWhatsAppField(t('bookClass.form.phone'), data.phone),
+      formatWhatsAppField(t('bookClass.form.classType'), getClassTypeLabel(data.classType)),
+    ]
+
+    if (data.message.trim()) {
+      lines.push('', formatWhatsAppField(t('bookClass.form.message'), data.message.trim()))
+    }
+
+    lines.push('', t('bookClass.form.whatsappClosing'))
+    return lines.join('\n')
+  }
+
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
+    openWhatsAppMessage(buildWhatsAppMessage(form))
     setSubmitted(true)
   }
 

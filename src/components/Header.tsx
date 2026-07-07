@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import FlagIcon from './FlagIcon'
 import { languages, type Language } from '../i18n'
@@ -13,22 +13,18 @@ const navItems = [
   { key: 'nav.home', to: '/' },
   { key: 'nav.capoeiraNago', to: '/capoeira-nago' },
   { key: 'nav.capoeirinha', to: '/capoeirinha' },
-  { key: 'nav.services', to: '/#servicos' },
-  { key: 'nav.masters', to: '/#mestres' },
-  { key: 'nav.academy', to: '/#academia' },
-  { key: 'nav.bookClass', to: '/#aulas' },
+  { key: 'nav.coaches', to: '/professores' },
+  { key: 'nav.academy', to: '/academia' },
+  { key: 'nav.products', to: '/produtos' },
+  { key: 'nav.events', to: '/eventos' },
 ] as const
 
-function isNavActive(pathname: string, to: string) {
-  if (to === '/') return pathname === '/'
-  if (to === '/capoeira-nago') return pathname === '/capoeira-nago'
-  if (to === '/capoeirinha') return pathname === '/capoeirinha'
-  return false
+function linkClassName(isActive: boolean) {
+  return isActive ? 'header__link header__link--active' : 'header__link'
 }
 
 export default function Header({ overlay = false }: HeaderProps) {
   const { t, i18n } = useTranslation()
-  const { pathname } = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
   const currentLang = i18n.language as Language
 
@@ -61,35 +57,19 @@ export default function Header({ overlay = false }: HeaderProps) {
 
         <nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}>
           <ul className="header__links">
-            {navItems.map((item) => {
-              const active = isNavActive(pathname, item.to)
-
-              if (item.to.startsWith('/#')) {
-                return (
-                  <li key={item.to}>
-                    <a
-                      href={item.to}
-                      className={active ? 'header__link--active' : ''}
-                      onClick={closeMenu}
-                    >
-                      {t(item.key)}
-                    </a>
-                  </li>
-                )
-              }
-
-              return (
-                <li key={item.to}>
-                  <Link
-                    to={item.to}
-                    className={active ? 'header__link--active' : ''}
-                    onClick={closeMenu}
-                  >
-                    {t(item.key)}
-                  </Link>
-                </li>
-              )
-            })}
+            {navItems.map((item) => (
+              <li key={item.to}>
+                <NavLink
+                  to={item.to}
+                  end={item.to === '/'}
+                  className={({ isActive }) => linkClassName(isActive)}
+                  aria-current={undefined}
+                  onClick={closeMenu}
+                >
+                  {t(item.key)}
+                </NavLink>
+              </li>
+            ))}
           </ul>
 
           <div className="header__divider" aria-hidden="true" />

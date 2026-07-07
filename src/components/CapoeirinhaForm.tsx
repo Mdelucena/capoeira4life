@@ -1,8 +1,10 @@
 import { useState, type FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
+import { formatWhatsAppField, openWhatsAppMessage } from '../utils/whatsappForm'
 import './CapoeirinhaForm.css'
 
 type FormData = {
+  name: string
   age: string
   height: string
   weight: string
@@ -12,6 +14,7 @@ type FormData = {
 }
 
 const initialForm: FormData = {
+  name: '',
   age: '',
   height: '',
   weight: '',
@@ -29,8 +32,48 @@ export default function CapoeirinhaForm() {
     setForm((prev) => ({ ...prev, [field]: value }))
   }
 
+  function getSexLabel(value: string) {
+    const labels: Record<string, string> = {
+      male: t('capoeirinha.form.sexOptions.male'),
+      female: t('capoeirinha.form.sexOptions.female'),
+      other: t('capoeirinha.form.sexOptions.other'),
+    }
+    return labels[value] ?? value
+  }
+
+  function getMartialArtsLabel(value: string) {
+    const labels: Record<string, string> = {
+      yes: t('capoeirinha.form.martialArtsOptions.yes'),
+      no: t('capoeirinha.form.martialArtsOptions.no'),
+    }
+    return labels[value] ?? value
+  }
+
+  function buildWhatsAppMessage(data: FormData) {
+    const lines = [
+      t('capoeirinha.form.whatsappIntro'),
+      '',
+      formatWhatsAppField(t('capoeirinha.form.name'), data.name),
+      formatWhatsAppField(t('capoeirinha.form.age'), data.age),
+      formatWhatsAppField(t('capoeirinha.form.height'), `${data.height} cm`),
+      formatWhatsAppField(t('capoeirinha.form.weight'), `${data.weight} kg`),
+      formatWhatsAppField(t('capoeirinha.form.sex'), getSexLabel(data.sex)),
+      formatWhatsAppField(t('capoeirinha.form.martialArts'), getMartialArtsLabel(data.martialArts)),
+    ]
+
+    if (data.martialArts === 'yes' && data.martialArtsName.trim()) {
+      lines.push(
+        formatWhatsAppField(t('capoeirinha.form.martialArtsWhich'), data.martialArtsName.trim()),
+      )
+    }
+
+    lines.push('', t('capoeirinha.form.whatsappClosing'))
+    return lines.join('\n')
+  }
+
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
+    openWhatsAppMessage(buildWhatsAppMessage(form))
     setSubmitted(true)
   }
 
@@ -45,6 +88,18 @@ export default function CapoeirinhaForm() {
   return (
     <form className="capoeirinha-form" onSubmit={handleSubmit}>
       <div className="capoeirinha-form__grid">
+        <label className="capoeirinha-form__field capoeirinha-form__field--wide">
+          <span>{t('capoeirinha.form.name')}</span>
+          <input
+            type="text"
+            required
+            autoComplete="name"
+            value={form.name}
+            onChange={(e) => handleChange('name', e.target.value)}
+            placeholder={t('capoeirinha.form.namePlaceholder')}
+          />
+        </label>
+
         <label className="capoeirinha-form__field">
           <span>{t('capoeirinha.form.age')}</span>
           <input

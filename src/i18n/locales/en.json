@@ -4,40 +4,173 @@
     "capoeiraNago": "Capoeira Nagô",
     "capoeirinha": "O Capoeirinha",
     "services": "Services",
+    "coaches": "Coaches",
     "masters": "Masters",
     "academy": "Academy",
-    "bookClass": "Book a Class"
+    "products": "Products",
+    "events": "Events"
   },
   "hero": {
     "label": "Welcome",
     "title": "Capoeira4Life",
-    "subtitle": "Values, mission and vision of Capoeira4Life",
+    "lead": "Capoeira, culture and community in the heart of London.",
+    "body": [
+      "Capoeira4Life is the Capoeira Nagô project in London, dedicated to bringing people of all ages closer to capoeira through classes, music, movement and roda.",
+      "We train adults and children at Moberly Sports Centre in Kensal Rise, with experienced coaches and deep respect for the Afro-Brazilian roots of the art."
+    ],
     "videoPlaceholder": "Background video"
   },
   "academy": {
     "label": "The Academy",
-    "title": "Capoeira4Life in London",
-    "lead": "Real capoeira in a welcoming gym space, with specialized masters guiding every roda.",
-    "imageAlt": "Capoeira classes at the Capoeira4Life academy in London",
+    "title": "Moberly Sports Centre",
+    "subtitle": "Our main home in London is Moberly Sports Centre in the heart of Kensal Rise.",
+    "lead": "Our home in London is Moberly Sports Centre: a spacious, welcoming and well-equipped gym where we train capoeira every week.",
     "body": [
-      "Capoeira4Life offers regular classes at our academy in London, open to beginners and experienced capoeiristas. Capoeira is taught with respect for its Afro-Brazilian roots, combining movement, music, culture and community.",
-      "Our masters specialize in technique, musicality, children's capoeira, fitness and the traditions of Capoeira Nagô. Each brings years of experience to help you grow at your own pace.",
-      "Whether you are starting out, training conditioning, connecting with Brazilian culture or trying something new, there is a place for you in our roda."
+      "Adult capoeira, Capoeirinha and open training sessions all happen here, in a dedicated hall with room for ginga, sequences, music and roda. It is the meeting point for our London community.",
+      "The centre is easy to reach, with good transport links and facilities for students of all ages. Wear comfortable clothes, bring water and come discover our roda.",
+      "Want to try it? Book a class or drop in at one of the times below. We look forward to welcoming you at the academy."
     ],
+    "venue": {
+      "label": "Where we train",
+      "address": "25 Chamberlayne Rd, London NW10 3NB, United Kingdom",
+      "openMaps": "Open in Google Maps"
+    },
+    "photos": {
+      "outsideAlt": "Outside Moberly Sports Centre, Capoeira4Life academy in London",
+      "outsideCaption": "Outside: easy to find on Chamberlayne Road",
+      "insideAlt": "Inside the training hall at Moberly Sports Centre",
+      "insideCaption": "Inside: our class and roda space"
+    },
     "highlights": [
       {
-        "title": "Specialized masters",
-        "text": "Qualified teachers with deep knowledge of capoeira, from fundamentals to advanced game."
+        "title": "Weekly classes",
+        "text": "Adult capoeira, Capoeirinha and regular training in one venue, with fixed weekly times."
       },
       {
-        "title": "Academy classes",
-        "text": "Structured sessions in a proper training space, with safety and progression in mind."
+        "title": "Ready-made space",
+        "text": "A large hall for movement, technical sequences, musicality and roda, set up for safe training."
       },
       {
-        "title": "All ages & levels",
-        "text": "From the Capoeirinha kids' programme to adult classes, everyone is welcome."
+        "title": "Local community",
+        "text": "A meeting point in Kensal Rise for anyone who wants to train, learn Afro-Brazilian culture and join the roda."
       }
-    ]
+    ],
+    "pricing": {
+      "label": "Plans",
+      "title": "Fees & Membership",
+      "subtitle": "Choose the plan that fits your journey in the roda.",
+      "currency": "£",
+      "perMonth": "per month",
+      "footnote": "Prices shown are monthly rates within each plan. Contact us to confirm availability and payment options.",
+      "registration": {
+        "label": "Registration fee",
+        "note": "One-time payment when you join."
+      },
+      "kids": {
+        "title": "Capoeirinha (Kids)",
+        "plans": {
+          "monthly": {
+            "name": "Monthly",
+            "perks": [
+              "Capoeirinha classes on weekly schedule"
+            ]
+          },
+          "quarterly": {
+            "name": "Quarterly",
+            "perks": [
+              "Capoeirinha classes on weekly schedule",
+              "3-month commitment"
+            ]
+          },
+          "semiannual": {
+            "name": "6-Month",
+            "perks": [
+              "Capoeirinha classes on weekly schedule",
+              "Capoeirinha T-shirt included"
+            ]
+          },
+          "annual": {
+            "name": "Annual",
+            "perks": [
+              "Capoeirinha classes on weekly schedule",
+              "Capoeirinha T-shirt included",
+              "Full Capoeira Nagô uniform kit"
+            ]
+          }
+        }
+      },
+      "adults": {
+        "title": "Capoeira (Adults)",
+        "plans": {
+          "monthly": {
+            "name": "Monthly",
+            "perks": [
+              "Adult capoeira classes"
+            ]
+          },
+          "quarterly": {
+            "name": "Quarterly",
+            "perks": [
+              "Adult capoeira classes",
+              "3-month commitment"
+            ]
+          },
+          "semiannual": {
+            "name": "6-Month",
+            "perks": [
+              "Adult capoeira classes",
+              "Capoeira4Life water bottle included"
+            ]
+          }
+        }
+      }
+    },
+    "schedule": {
+      "label": "Schedule",
+      "title": "Class Timetable",
+      "note": "Please confirm availability before your first class.",
+      "columns": {
+        "day": "Day",
+        "class": "Class",
+        "time": "Time",
+        "academy": "Venue"
+      },
+      "venues": {
+        "moberly": "Moberly Sports Centre",
+        "coqueiro": "The Gym Group London West Hampstead",
+        "porchester": "Porchester Centre"
+      },
+      "rows": [
+        { "day": "Saturday", "class": "Capoeirinha", "time": "2:15 PM – 3:15 PM", "academyKey": "moberly" },
+        { "day": "Saturday", "class": "Adult capoeira", "time": "3:15 PM – 4:30 PM", "academyKey": "moberly" },
+        { "day": "Monday", "class": "Adult capoeira", "time": "6:00 PM – 7:00 PM", "academyKey": "porchester" },
+        { "day": "Wednesday", "class": "Adult capoeira", "time": "7:00 PM – 8:00 PM", "academyKey": "coqueiro" },
+        { "day": "Friday", "class": "Adult capoeira", "time": "7:00 PM – 8:00 PM", "academyKey": "coqueiro" }
+      ]
+    },
+    "otherVenues": {
+      "title": "We also run capoeira classes at the following venues",
+      "openMaps": "Open in Google Maps",
+      "items": {
+        "coqueiro": {
+          "name": "The Gym Group London West Hampstead",
+          "coach": "Graduado Coqueiro",
+          "schedule": "Wednesday and Friday, 7:00 PM – 8:00 PM",
+          "address": "Unit D2, 41 Fortune Green Road, London NW6 1DR"
+        },
+        "porchester": {
+          "name": "Porchester Centre – EveryOne Active",
+          "coach": "Graduado Esquilo",
+          "schedule": "Monday, 6:00 PM – 7:00 PM (adults)",
+          "address": "Queensway, Porchester Rd, London W2 5HS"
+        }
+      }
+    },
+    "map": {
+      "label": "Location",
+      "title": "How to Get Here",
+      "embedTitle": "Map of {{name}}"
+    }
   },
   "about": {
     "titleLine1": "About",
@@ -58,26 +191,22 @@
     "founder": {
       "label": "Founder",
       "name": "Mestre Pequinês",
-      "text": "Mestre Pequinês founded Capoeira Nagô in 2002 with a mission to keep ancestral roots alive while transforming lives through capoeira. His social work reaches over 1,500 children in vulnerable communities, using the art as a tool for education, inclusion and citizenship.",
+      "text": "Mestre Pequinês founded Capoeira Nagô in 2002 with a mission to keep ancestral roots alive while transforming lives through capoeira. He also created Elite Capoeira Fight, a system of automatically matched capoeira bouts that combines competition, technique and respect for tradition.",
       "imageAlt": "Mestre Pequinês, founder of Capoeira Nagô"
     },
     "genealogy": {
       "label": "Lineage",
       "title": "Genealogical Tree",
-      "subtitle": "Graduated masters in order of formation",
-      "root": "Mestre Pequinês",
-      "support": "Mestre Suíno",
-      "nodes": [],
-      "placeholder": "More masters coming soon"
+      "subtitle": "Masters graduated by Mestre Pequinês, spread across the world"
     },
     "cords": {
       "label": "Graduation",
-      "title": "Cord Exchange",
-      "lead": "In capoeira, a student's progress is marked by cords: woven ropes that symbolise level of knowledge, responsibility and dedication to the art.",
+      "title": "Rope Exchange",
+      "lead": "In capoeira, a student's progress is marked by ropes that symbolise level of knowledge, responsibility and dedication to the art.",
       "body": [
-        "Unlike other martial arts, capoeira uses cords rather than rigid belts. Each colour represents a stage on the capoeirista's journey, from beginner student to master. In Capoeira Nagô, the official system includes specific paths for adults, children (5 to 10 years) and youth (11 to 14 years), as shown in the chart.",
-        "A cord exchange is not based on training time alone. The master or teacher evaluates technical growth, musicality, knowledge of history and rituals, behaviour inside and outside the roda, and respect for tradition. Each student progresses at their own pace.",
-        "The exchange ceremony is both festive and solemn: family, friends and the whole roda come together. The capoeirista plays, sings and demonstrates what they have learned. Receiving a new cord also means taking on new responsibilities within the group."
+        "Unlike other martial arts, capoeira uses ropes rather than rigid belts. Each colour represents a stage on the capoeirista's journey, from beginner student to master. In Capoeira Nagô, the official system includes specific paths for adults, children (5 to 10 years) and youth (11 to 14 years), as shown in the chart.",
+        "A rope exchange is not based on training time alone. The master or teacher evaluates technical growth, musicality, knowledge of history and rituals, behaviour inside and outside the roda, and respect for tradition. Each student progresses at their own pace.",
+        "The exchange ceremony is both festive and solemn: family, friends and the whole roda come together. The capoeirista plays, sings and demonstrates what they have learned. Receiving a new rope also means taking on new responsibilities within the group."
       ],
       "steps": [
         {
@@ -90,10 +219,10 @@
         },
         {
           "title": "Ceremony in the roda",
-          "text": "The new cord is given at a collective event, with games, songs and community celebration."
+          "text": "The new rope is given at a collective event, with games, songs and community celebration."
         }
       ],
-      "imageAlt": "Official Capoeira Nagô graduation system, showing cords by level and age group"
+      "imageAlt": "Official Capoeira Nagô graduation system, showing ropes by level and age group"
     },
     "video": {
       "label": "Teaching",
@@ -144,6 +273,21 @@
           "description": "The base movement of capoeira: a rhythmic sway from side to side that teaches balance, flow and readiness for any move."
         },
         {
+          "id": "cocorinha",
+          "name": "Cocorinha",
+          "description": "A crouching defence: we bend the knees and stay low, one hand on the ground, ready to protect ourselves and spring back up."
+        },
+        {
+          "id": "martelo",
+          "name": "Martelo",
+          "description": "A strong kick that rises from the side like a hammer. Works balance, leg strength and aim."
+        },
+        {
+          "id": "queixada",
+          "name": "Queixada",
+          "description": "A crescent kick that slices through the air from the inside out. Teaches hip opening, coordination and lightness."
+        },
+        {
           "id": "au",
           "name": "Au",
           "description": "A cartwheel performed with open arms. It develops coordination, spatial awareness and the courage to move freely."
@@ -152,11 +296,6 @@
           "id": "macaquinho",
           "name": "Macaquinho",
           "description": "A low move close to the ground, like a little monkey. Builds agility, arm strength and playful movement."
-        },
-        {
-          "id": "negativa",
-          "name": "Negativa",
-          "description": "A low defensive escape with hands on the ground. Teaches protection, reflexes and how to dodge with cunning."
         },
         {
           "id": "ponte",
@@ -188,17 +327,17 @@
     },
     "graduation": {
       "label": "Graduations",
-      "title": "Cords for Children & Teens",
+      "title": "Ropes for Children & Teens",
       "lead": "Graduation in Capoeirinha celebrates effort, technical growth and respect for capoeira culture.",
       "body": [
-        "Children and teenagers earn cords as they progress in class. Each colour marks a stage of learning, from first steps to more advanced movements.",
+        "Children and teenagers earn ropes as they progress in class. Each colour marks a stage of learning, from first steps to more advanced movements.",
         "Evaluations consider participation, respect, musicality and mastery of fundamentals, not just physical ability. Every child grows at their own pace.",
         "Teens follow a progressive path that prepares them for the adult graduation system, keeping the same values of discipline and cultural identity."
       ],
       "steps": [
         {
           "title": "Progressive evolution",
-          "text": "Each cord represents a new challenge conquered with dedication in class."
+          "text": "Each rope represents a new challenge conquered with dedication in class."
         },
         {
           "title": "Fair criteria",
@@ -209,12 +348,14 @@
           "text": "Graduation ceremonies are festive moments with family, friends and the whole roda."
         }
       ],
-      "imageAlt": "Graduated child wearing a capoeira cord, Capoeira Nagô"
+      "imageAlt": "Graduated child wearing a capoeira rope, Capoeira Nagô"
     },
     "form": {
       "label": "Trial class",
       "title": "Come Try a Trial Class!",
       "subtitle": "Sign your little one up for an experimental Capoeirinha class: games, music, movement and lots of fun. Parents can fill in the details below.",
+      "name": "Name",
+      "namePlaceholder": "Your full name",
       "age": "Age",
       "agePlaceholder": "e.g. 8",
       "height": "Height (cm)",
@@ -237,7 +378,9 @@
       "martialArtsWhich": "Which martial art?",
       "martialArtsWhichPlaceholder": "e.g. Jiu-jitsu, karate...",
       "submit": "Book trial class",
-      "success": "Registration received! We'll be in touch soon to schedule the trial class."
+      "whatsappIntro": "Hello! I came from the Capoeira4Life website, Capoeirinha section.",
+      "whatsappClosing": "I would like to book a trial class!",
+      "success": "We opened WhatsApp with your details. Confirm sending the message to complete your request."
     }
   },
   "history": {
@@ -246,7 +389,83 @@
     "lead": "A martial art, dance and culture born from the resistance of African peoples in Brazil.",
     "body": "Created during the colonial period as a form of physical and cultural resistance, capoeira disguised fighting moves with music, dance and rhythm to evade surveillance on the plantations. Banned after abolition in 1888, it was only legitimised in the 1930s, when Mestre Bimba founded Capoeira Regional and Mestre Pastinha codified Capoeira Angola. In 2014, UNESCO recognised the Capoeira Circle as Intangible Cultural Heritage of Humanity.",
     "cta": "Meet the Masters",
-    "imageAlt": "Capoeira roda with practitioners in motion"
+    "imageAlt": "Capoeira roda with practitioners in motion",
+    "imageAlt2": "Capoeira practitioners in action during roda",
+    "prevPhoto": "Previous photo",
+    "nextPhoto": "Next photo"
+  },
+  "coaches": {
+    "label": "Team",
+    "title": "Coaches",
+    "subtitle": "Capoeira4Life coaches who lead classes in London.",
+    "achievementsTitle": "Highlights",
+    "followInstagram": "Follow on Instagram",
+    "items": {
+      "fabricio": {
+        "role": "Master, Capoeira Nagô",
+        "name": "Mestre Fabricio",
+        "fullName": "Fabricio Salerno",
+        "experience": "30+ years in capoeira",
+        "imageAlt": "Mestre Fabricio Salerno",
+        "paragraphs": [
+          "A leading figure in Capoeira Nagô, Fabricio brings decades of practice, teaching and event organisation. Born in Goiânia, he discovered capoeira as a child and turned that passion into structured programmes for children and adults, blending technique, musicality and cultural identity.",
+          "With the experience of someone who has lived the art in competitions, performances and international rodas, he shares capoeira as fighting, dance and acrobatics in one flow. Watching students grow in confidence, strength and resilience is the greatest reward."
+        ],
+        "achievements": [
+          "Master title, highest rank, awarded in Brazil in 2019",
+          "Founder of Capoeira Nagô Academy in Rome, Italy",
+          "Honoris causa in Barcelona, 2024",
+          "Central judge at international capoeira competitions"
+        ]
+      },
+      "samurai": {
+        "role": "Coach and director, Capoeira4Life",
+        "name": "Coach Samurai",
+        "fullName": "Pablo Conti",
+        "experience": "18+ years in capoeira",
+        "imageAlt": "Coach Pablo Samurai Conti, director of Capoeira4Life",
+        "paragraphs": [
+          "From Goiânia, Pablo \"Samurai\" Conti built his path through rigorous training and deep respect for Afro-Brazilian roots. A coach and director at Capoeira4Life, he brings energy and precision to every class and roda.",
+          "He has travelled across Europe sharing the rhythm, movement and philosophy of capoeira. Known as an ambassador of Brazilian culture, he preserves tradition while inspiring new generations of practitioners."
+        ],
+        "achievements": [
+          "European Champion, Rome 2018",
+          "Solta o Jogo UK Champion, 2023",
+          "2nd place Solta o Jogo UK, 2024"
+        ]
+      },
+      "esquilo": {
+        "role": "Coach",
+        "name": "Coach Esquilo",
+        "fullName": "David Ok",
+        "experience": "8+ years as a coach",
+        "imageAlt": "Coach David Esquilo Ok",
+        "paragraphs": [
+          "David Ok, known as Esquilo, combines martial arts, teaching and science. Born in Paris, he has practised capoeira since 2016, but before that spent over 20 years in judo, reaching 1st dan black belt.",
+          "Since 2021 he has coached capoeira for children aged 5 to 10, bringing the patience and method of someone who has also taught classical guitar and computer science. Outside the roda, he is an AI scientist with a PhD in computer vision."
+        ],
+        "achievements": [
+          "1st place UK Solta o Jogo 2023 (advanced team)",
+          "2nd place European Nago Championship, Malta 2024 (advanced)"
+        ]
+      },
+      "coqueiro": {
+        "role": "Coach",
+        "name": "Coach Coqueiro",
+        "fullName": "Emanuel Silva",
+        "experience": "10+ years as a coach",
+        "imageAlt": "Coach Emanuel Coqueiro Silva",
+        "paragraphs": [
+          "Emanuel Silva, Coqueiro, brings a strong background in sport and education. Born in Cape Verde, he grew up between Portugal and England, where he graduated with a BSc in Sport Science (Teaching & Coaching).",
+          "Since 2013 he has coached children from 18 months to 12 years old, and has trained capoeira for around 7 years. He blends energy, pedagogy and care for every student, in capoeira classes and as a Level 3 personal trainer."
+        ],
+        "achievements": [
+          "1st place UK Solta o Jogo 2023 (advanced team)",
+          "Level 3 Personal Trainer",
+          "BSc Sport Science (Teaching & Coaching)"
+        ]
+      }
+    }
   },
   "masters": {
     "label": "Legacy",
@@ -286,6 +505,129 @@
       }
     ]
   },
+  "products": {
+    "label": "Shop",
+    "title": "Capoeira4Life Products",
+    "subtitle": "Equipment and gear to train, play and live capoeira.",
+    "lead": "Official instruments, clothing and accessories from the group. Browse what's available below and place your order via WhatsApp.",
+    "orderButton": "Place order",
+    "photoPlaceholder": "Photo coming soon",
+    "prevPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
+    "whatsappIntro": "Hello! I came from the Capoeira4Life website, Products page.",
+    "whatsappProductLabel": "Product",
+    "whatsappClosing": "I would like to place an order!",
+    "items": {
+      "agogo": {
+        "title": "Agogô",
+        "description": "Traditional double bell for the capoeira bateria. Ideal for roda and music training.",
+        "price": "On request"
+      },
+      "atabaque": {
+        "title": "Atabaque",
+        "description": "Tall capoeira hand drum with artisanal construction and natural skin head. The backbone of roda rhythms.",
+        "price": "On request"
+      },
+      "berimbau": {
+        "title": "Berimbau",
+        "description": "Capoeira's iconic instrument. Available in different sizes: gunga, médio and viola.",
+        "price": "On request"
+      },
+      "pandeiro": {
+        "title": "Pandeiro",
+        "description": "Hand frame drum with jingles, essential in the capoeira bateria. Ideal for toques and rhythm training.",
+        "price": "On request"
+      },
+      "tenis": {
+        "title": "Capoeira trainers",
+        "description": "Footwear designed for movement, grip and comfort in class and in the roda.",
+        "price": "On request"
+      },
+      "camisa-capoeirinha": {
+        "title": "Capoeirinha T-shirt",
+        "description": "Official Capoeirinha children's programme T-shirt from Capoeira4Life.",
+        "price": "On request"
+      },
+      "camisa-calca-nago": {
+        "title": "Capoeira Nagô shirt & trousers",
+        "description": "Official training uniform with Capoeira Nagô shirt and trousers.",
+        "price": "On request"
+      },
+      "garrafa": {
+        "title": "Capoeira4Life / Capoeirinha bottle",
+        "description": "Reusable water bottle with group branding. Capoeira4Life and Capoeirinha designs.",
+        "price": "On request"
+      }
+    },
+    "note": "Prices and availability may vary. Contact us on WhatsApp to confirm sizes, colours and delivery times."
+  },
+  "events": {
+    "label": "Calendar",
+    "title": "Capoeira4Life Events",
+    "subtitle": "Discover our events, workshops and seminars with guest masters.",
+    "lead": "Rodas, graduations, cultural gatherings and special training sessions are part of group life. Here are some of the moments that mark our community in London and beyond.",
+    "photoPlaceholder": "Photo coming soon",
+    "modal": {
+      "close": "Close",
+      "openEvent": "View event",
+      "dateLabel": "Date",
+      "videoTitle": "Video",
+      "prevPhoto": "Previous photo",
+      "nextPhoto": "Next photo",
+      "photoAlt": "{{title}} — photo {{index}}"
+    },
+    "items": {
+      "dnv-cultural-2025": {
+        "title": "DNA Cultural 2025",
+        "description": "Special workshop with Contramestre Fumaça at the DNA Cultural gathering in London."
+      },
+      "capoeirinha": {
+        "title": "O Capoeirinha 2026",
+        "description": "Meet our new mascot, from Capoeira Nagô Kids UK. Joy, movement and plenty of photos in the roda!"
+      },
+      "dnv-cultural-2026": {
+        "title": "DNA Cultural 2026",
+        "description": "A new Capoeira Nagô gathering in London, for adults and children, introducing Capoeirinha Nagô Kids UK."
+      }
+    },
+    "details": {
+      "capoeirinha": {
+        "date": "24 October 2026",
+        "eyebrow": "Capoeira Nagô Kids UK",
+        "headline": "Our new mascot has arrived",
+        "lead": "Look who's here to brighten up our roda: O Capoeirinha, the new mascot of Capoeira Nagô Kids UK! Cheerful, strong and full of energy.",
+        "body": [
+          "O Capoeirinha is the face of our energy: a young capoeirista full of movement, inviting children to discover capoeira with joy, music and play.",
+          "Come and be part of this magical world, meet the mascot up close and grab a photo with him. You're our special guest!",
+          "An initiative by Professor Samurai, within the Capoeira Nagô Kids UK project in London, to bring the little ones closer to capoeira from an early age."
+        ]
+      },
+      "dnv-cultural-2025": {
+        "date": "25 October 2025",
+        "eyebrow": "Special workshop",
+        "headline": "Contramestre Fumaça in the London roda",
+        "lead": "At DNA Cultural 2025, Capoeira4Life welcomed Contramestre Fumaça from Germany for a special workshop in London.",
+        "body": [
+          "The theme was \"Legacy of my master\": an afternoon of capoeira with technique, musicality and plenty of roda, bringing the experience of one of Capoeira Nagô's leading names in Europe.",
+          "The event was organised by Professor Samurai and supervised by Mestre Fabricio, bringing capoeiristas of different levels together in a shared space of learning and celebration.",
+          "Beyond the workshop, the gathering included roda, community time and memories that show the strength of our London community. An edition to train, play and share the Nagô tradition.",
+          "It was an important moment for Capoeira4Life: welcoming a guest of stature, exchanging knowledge and strengthening the bond between masters, coaches and students within the DNA Cultural project."
+        ]
+      },
+      "dnv-cultural-2026": {
+        "date": "23 & 24 October 2026",
+        "eyebrow": "Save the date",
+        "headline": "Your identity in the roda",
+        "lead": "On 23 and 24 October 2026, Capoeira4Life presents DNA Cultural: two days of capoeira in London, for adults and children, celebrating the identity and roots of Capoeira Nagô.",
+        "body": [
+          "An edition designed for the whole community: adults and children train, play and share the roda, with workshops, musicality and plenty of knowledge exchange.",
+          "We will also introduce Capoeirinha Nagô Kids UK, the mascot created to bring children closer to capoeira with joy and purpose, making every class more fun and inspiring.",
+          "The event is organised by Professor Samurai and supervised by Mestre Fabricio, bringing masters, coaches and students together in one space of celebration.",
+          "Mark your calendar: 23 and 24 October. It will be a weekend to live the Nagô identity in and out of the roda."
+        ]
+      }
+    }
+  },
   "bookClass": {
     "title": "Book Your Class",
     "subtitle": "Want to try capoeira? Fill in the form and we'll get in touch to schedule your first class.",
@@ -306,7 +648,9 @@
       "message": "Message",
       "messagePlaceholder": "Preferred time, previous experience or any questions (optional)",
       "submit": "Book a class",
-      "success": "Request received! We'll be in touch soon to schedule your class."
+      "whatsappIntro": "Hello! I came from the Capoeira4Life website.",
+      "whatsappClosing": "I would like to book a class!",
+      "success": "We opened WhatsApp with your details. Confirm sending the message to complete your request."
     }
   },
   "whatsapp": {
@@ -318,7 +662,7 @@
     "contactHint": "Questions about classes, events or partnerships.",
     "email": "capoeiralifelondon@gmail.com",
     "locationTitle": "Find us",
-    "locationText": "Find the academy nearest to you.",
+    "locationText": "Moberly Sports Centre, 25 Chamberlayne Rd, London NW10 3NB",
     "followUs": "Follow us on social media",
     "rights": "Capoeira4Life | Copyright {{year}} © All rights reserved",
     "nagoAlt": "Capoeira Nagô"
@@ -331,7 +675,8 @@
     "label": "Language",
     "pt": "Português",
     "en": "English",
-    "es": "Español"
+    "es": "Español",
+    "it": "Italiano"
   },
   "a11y": {
     "openMenu": "Open menu",

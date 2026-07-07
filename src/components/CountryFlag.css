@@ -1,0 +1,8 @@
+.country-flag {
+  display: inline-flex;
+  line-height: 0;
+}
+
+.country-flag svg {
+  display: block;
+}

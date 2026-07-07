@@ -4,14 +4,23 @@ import YouTubeEmbed from '../YouTubeEmbed'
 import capoeiraNagoLogo from '../../assets/image/capoeira nago.png'
 import pequinesImg from '../../assets/image/mestrepique.png'
 import faixasImg from '../../assets/image/faixas.jpeg'
+import { NAGO_GENEALOGY_ROOT, NAGO_GENEALOGY_ROWS, type GenealogyMember } from '../../data/nagoGenealogy'
+import CountryFlag from '../CountryFlag'
 import './CapoeiraNagoSection.css'
 
 const NAGO_VIDEO_ID = '8y18Pgces8s'
 
+function GenealogyNode({ name, country, countryLabel }: GenealogyMember) {
+  return (
+    <div className="nago__tree-node">
+      <span className="nago__tree-name">{name}</span>
+      <CountryFlag code={country} label={countryLabel} className="nago__tree-flag" />
+    </div>
+  )
+}
+
 export default function CapoeiraNagoSection() {
   const { t } = useTranslation()
-
-  const treeNodes = t('nago.genealogy.nodes', { returnObjects: true }) as string[]
 
   const cordsSteps = t('nago.cords.steps', { returnObjects: true }) as {
     title: string
@@ -70,22 +79,17 @@ export default function CapoeiraNagoSection() {
           <FadeIn className="nago__tree" delay={150}>
             <div className="nago__tree-root">
               <div className="nago__tree-node nago__tree-node--root">
-                {t('nago.genealogy.root')}
+                {NAGO_GENEALOGY_ROOT}
               </div>
             </div>
             <div className="nago__tree-line" aria-hidden="true" />
-            <div className="nago__tree-row">
-              <div className="nago__tree-node nago__tree-node--support">
-                {t('nago.genealogy.support')}
-              </div>
-              {treeNodes.map((name) => (
-                <div key={name} className="nago__tree-node">
-                  {name}
+            <div className="nago__tree-levels">
+              {NAGO_GENEALOGY_ROWS.map((row) => (
+                <div key={`${row[0].name}-${row[1].name}`} className="nago__tree-row">
+                  <GenealogyNode {...row[0]} />
+                  <GenealogyNode {...row[1]} />
                 </div>
               ))}
-              <div className="nago__tree-node nago__tree-node--placeholder">
-                {t('nago.genealogy.placeholder')}
-              </div>
             </div>
           </FadeIn>
         </div>
