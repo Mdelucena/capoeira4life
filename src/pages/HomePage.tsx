@@ -15,12 +15,12 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       <main>
-        <PartnershipsSection />
         <AboutSection />
         <HistorySection />
         <MastersSection />
         <ExploreSection />
         <ReviewsSection />
+        <PartnershipsSection />
         <BookClassSection />
       </main>
       <Footer />
