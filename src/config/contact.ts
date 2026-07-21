@@ -3,7 +3,7 @@ export const WHATSAPP_NUMBER = '447496831095'
 
 export const WHATSAPP_DISPLAY = '+44 7496 831095'
 
-export const CONTACT_EMAIL = 'capoeiralifelondon@gmail.com'
+export const CONTACT_EMAIL = 'info@capoeira4life.com.br'
 
 export const INSTAGRAM_HANDLE = 'capoeira4lifelondon'
 export const YOUTUBE_HANDLE = 'capoeira4lifelondon'

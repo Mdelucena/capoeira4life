@@ -72,3 +72,34 @@
   color: var(--text-muted);
   margin-top: 0.125rem;
 }
+
+@media (max-width: 900px) {
+  .reviews__grid {
+    display: flex;
+    grid-template-columns: none;
+    gap: 0.875rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 0;
+    padding-bottom: 0.75rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .reviews__grid::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .reviews__grid::-webkit-scrollbar-thumb {
+    background: rgba(26, 58, 143, 0.25);
+    border-radius: 999px;
+  }
+
+  .reviews__card {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    scroll-snap-align: center;
+    box-sizing: border-box;
+  }
+}

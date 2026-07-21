@@ -42,9 +42,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  gap: 1rem;
+  max-width: 1440px;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
 }
 
 .header__logo {
@@ -59,9 +60,18 @@
 }
 
 .header__logo img {
-  height: 72px;
+  height: 64px;
   width: auto;
   display: block;
+}
+
+.header__logo--capoeirinha {
+  margin-left: 0.25rem;
+  flex-shrink: 0;
+}
+
+.header__logo--capoeirinha img {
+  height: 100px;
 }
 
 .header--overlay .header__logo img {
@@ -99,16 +109,19 @@
 .header__nav {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
+  flex-wrap: nowrap;
+  gap: 0.875rem;
   margin-left: auto;
+  margin-right: auto;
+  min-width: 0;
 }
 
 .header__links {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: flex-end;
-  gap: 0.125rem 1.5rem;
+  justify-content: center;
+  gap: 0.875rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -117,9 +130,9 @@
 .header__links a,
 .header__link {
   position: relative;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--blue);
   white-space: nowrap;
@@ -244,14 +257,52 @@
   background: rgba(255, 255, 255, 0.15);
 }
 
-@media (max-width: 1200px) {
-  .header__links {
-    gap: 0.125rem 1rem;
+@media (max-width: 1280px) {
+  .header__inner {
+    gap: 0.75rem;
   }
 
-  .header__links a {
+  .header__nav {
+    gap: 0.625rem;
+  }
+
+  .header__links {
+    gap: 0.625rem;
+  }
+
+  .header__links a,
+  .header__link {
     font-size: 0.6875rem;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
+  }
+
+  .header__logo img {
+    height: 56px;
+  }
+
+  .header__logo--capoeirinha img {
+    height: 88px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__links {
+    gap: 0.5rem;
+  }
+
+  .header__links a,
+  .header__link {
+    font-size: 0.625rem;
+    letter-spacing: 0.03em;
+  }
+
+  .header__lang-btn {
+    padding: 0.25rem;
+  }
+
+  .header__flag {
+    width: 18px;
+    height: 13px;
   }
 }
 
@@ -260,8 +311,19 @@
     height: 56px;
   }
 
+  .header__logo--capoeirinha {
+    margin-left: auto;
+    margin-right: 0.25rem;
+    order: 2;
+  }
+
+  .header__logo--capoeirinha img {
+    height: 72px;
+  }
+
   .header__menu-btn {
     display: flex;
+    order: 3;
   }
 
   .header__nav {

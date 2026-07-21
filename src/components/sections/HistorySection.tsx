@@ -41,7 +41,13 @@ export default function HistorySection() {
           </FadeIn>
 
           <FadeIn delay={240}>
-            <p className="history__body">{t('history.body')}</p>
+            <div className="history__body-group">
+              {(t('history.paragraphs', { returnObjects: true }) as string[]).map((paragraph, index) => (
+                <p key={index} className="history__body">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </FadeIn>
 
           <FadeIn delay={360}>
@@ -59,6 +65,8 @@ export default function HistorySection() {
               src={currentImage.src}
               alt={t(currentImage.altKey)}
               className="history__image"
+              loading="lazy"
+              decoding="async"
             />
 
             <button

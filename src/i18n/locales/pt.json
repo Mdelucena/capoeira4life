@@ -61,7 +61,8 @@
       "subtitle": "Escolha o plano ideal para começar ou continuar a sua jornada na roda.",
       "currency": "£",
       "perMonth": "por mês",
-      "footnote": "Valores por mês dentro de cada plano. Entre em contacto para confirmar disponibilidade e formas de pagamento.",
+      "footnote": "Valores por mês dentro de cada plano. Entre em contato para confirmar disponibilidade e formas de pagamento.",
+      "privateLessons": "Também oferecemos aulas privadas, de acordo com o aluno e a disponibilidade do professor.",
       "registration": {
         "label": "Taxa de matrícula",
         "note": "Pagamento único na inscrição."
@@ -141,11 +142,14 @@
         "porchester": "Porchester Centre"
       },
       "rows": [
-        { "day": "Sábado", "class": "Capoeirinha", "time": "14:15 – 15:15", "academyKey": "moberly" },
-        { "day": "Sábado", "class": "Capoeira para adultos", "time": "15:15 – 16:30", "academyKey": "moberly" },
         { "day": "Segunda", "class": "Capoeira para adultos", "time": "18:00 – 19:00", "academyKey": "porchester" },
+        { "day": "Terça", "class": "Capoeirinha", "time": "16:00 – 17:00", "academyKey": "moberly" },
         { "day": "Quarta", "class": "Capoeira para adultos", "time": "19:00 – 20:00", "academyKey": "coqueiro" },
-        { "day": "Sexta", "class": "Capoeira para adultos", "time": "19:00 – 20:00", "academyKey": "coqueiro" }
+        { "day": "Quinta", "class": "Capoeirinha", "time": "16:00 – 17:00", "academyKey": "moberly" },
+        { "day": "Quinta", "class": "Capoeira para adultos", "time": "19:00 – 20:30", "academyKey": "moberly" },
+        { "day": "Sexta", "class": "Capoeira para adultos", "time": "19:00 – 20:00", "academyKey": "coqueiro" },
+        { "day": "Sábado", "class": "Capoeirinha", "time": "14:15 – 15:15", "academyKey": "moberly" },
+        { "day": "Sábado", "class": "Capoeira para adultos", "time": "15:15 – 16:30", "academyKey": "moberly" }
       ]
     },
     "otherVenues": {
@@ -170,6 +174,11 @@
       "label": "Localização",
       "title": "Como Chegar",
       "embedTitle": "Mapa do {{name}}"
+    },
+    "video": {
+      "label": "Assista",
+      "title": "Capoeira4Life em Londres",
+      "subtitle": "Conheça a energia da nossa roda, das aulas e da comunidade Capoeira4Life."
     }
   },
   "about": {
@@ -304,6 +313,18 @@
         }
       ]
     },
+    "gallery": {
+      "label": "Galeria",
+      "title": "Fotos das Aulas — O Capoeirinha Kids",
+      "subtitle": "Momentos das nossas aulas com a criançada. Arraste para o lado e veja mais.",
+      "empty": "Fotos em breve.",
+      "prev": "Foto anterior",
+      "next": "Próxima foto",
+      "open": "Abrir foto {{index}} em tamanho real",
+      "close": "Fechar foto",
+      "lightboxLabel": "Visualização da foto em tamanho real",
+      "photoAlt": "Foto {{index}} das aulas do Capoeirinha Kids"
+    },
     "video": {
       "label": "Assista",
       "title": "Como Funciona uma Aula?",
@@ -350,6 +371,38 @@
       ],
       "imageAlt": "Criança graduada com corda de capoeira, Capoeira Nagô"
     },
+    "schedule": {
+      "label": "Horários",
+      "title": "Horário das Aulas Capoeirinha",
+      "subtitle": "Confira o dia e o horário das aulas do Capoeirinha.",
+      "note": "Confirme disponibilidade antes da primeira aula.",
+      "columns": {
+        "day": "Dia",
+        "class": "Aula",
+        "time": "Horário",
+        "academy": "Academia"
+      },
+      "rows": [
+        {
+          "day": "Terça",
+          "class": "Capoeirinha",
+          "time": "16:00 – 17:00",
+          "venue": "Moberly Sports Centre"
+        },
+        {
+          "day": "Quinta",
+          "class": "Capoeirinha",
+          "time": "16:00 – 17:00",
+          "venue": "Moberly Sports Centre"
+        },
+        {
+          "day": "Sábado",
+          "class": "Capoeirinha",
+          "time": "14:15 – 15:15",
+          "venue": "Moberly Sports Centre"
+        }
+      ]
+    },
     "form": {
       "label": "Aula experimental",
       "title": "Venha fazer uma aula experimental!",
@@ -387,7 +440,11 @@
     "label": "História",
     "title": "A Capoeira",
     "lead": "Arte-marcial, dança e cultura nascida da resistência dos povos africanos no Brasil.",
-    "body": "Criada no período colonial como forma de resistência física e cultural, a capoeira disfarçava golpes com música, dança e ritmo para escapar da vigilância nos engenhos. Proibida após a abolição em 1888, só foi legitimada na década de 1930, quando Mestre Bimba fundou a Capoeira Regional e Mestre Pastinha codificou a Capoeira Angola. Em 2014, a Unesco reconheceu a Roda de Capoeira como Patrimônio Cultural Imaterial da Humanidade.",
+    "paragraphs": [
+      "Criada no período colonial como forma de resistência física e cultural, a capoeira nasceu entre povos africanos escravizados no Brasil, sobretudo na Bahia. Nos engenhos e quilombos, golpes, esquivas e acrobacias eram disfarçados com música, dança e ritmo para escapar da vigilância dos senhores.",
+      "Depois da abolição, em 1888, a prática foi criminalizada e perseguida nas cidades. Mesmo assim, resistiu nas ruas, nos terreiros e nas rodas, preservando berimbau, atabaque, pandeiro e o canto que guiam o jogo até hoje.",
+      "Na década de 1930, a capoeira ganhou reconhecimento institucional: Mestre Bimba estruturou a Capoeira Regional e Mestre Pastinha consolidou a Capoeira Angola. Em 2014, a Unesco reconheceu a Roda de Capoeira como Patrimônio Cultural Imaterial da Humanidade, e hoje ela é praticada em todo o mundo como expressão de luta, arte e comunidade."
+    ],
     "cta": "Conheça os Mestres",
     "imageAlt": "Roda de capoeira com praticantes em movimento",
     "imageAlt2": "Praticantes de capoeira em ação na roda",
@@ -400,6 +457,18 @@
     "subtitle": "Professores da Capoeira4Life que guiam as aulas em Londres.",
     "achievementsTitle": "Destaques",
     "followInstagram": "Seguir no Instagram",
+    "classes": {
+      "label": "Nas aulas",
+      "title": "Como são as aulas de capoeira",
+      "lead": "Movimento, música e comunidade em cada treino",
+      "imageAlt": "Professores da Capoeira4Life juntos",
+      "cta": "Ver horários e academia",
+      "paragraphs": [
+        "Nas aulas da Capoeira4Life você encontra ginga, sequências, música e roda no mesmo espaço. Começamos com aquecimento e fundamentos, avançamos para movimentos e combinações, e fechamos tocando, cantando e jogando juntos.",
+        "O treino é para todos os níveis. Quem está começando aprende no próprio ritmo, com orientação clara dos professores. Quem já joga encontra desafio, musicalidade e evolução constante.",
+        "Mais do que técnica, as aulas são sobre comunidade. Respeito, energia e a cultura afro-brasileira guiam cada encontro, para adultos e crianças se sentirem parte da roda desde o primeiro dia."
+      ]
+    },
     "items": {
       "fabricio": {
         "role": "Mestre, Capoeira Nagô",
@@ -483,7 +552,53 @@
   },
   "partnerships": {
     "title": "Parcerias",
-    "empty": "Nenhuma parceria no momento."
+    "empty": "Nenhuma parceria no momento.",
+    "items": {
+      "dbroa": {
+        "name": "D'Broa",
+        "phrase": "Padaria e café com alma brasileira, bem perto da nossa roda em Londres."
+      },
+      "polimax": {
+        "name": "Polimax",
+        "phrase": "Car styling e proteção automotiva de referência na capital."
+      },
+      "lambert": {
+        "name": "Lambert",
+        "phrase": "Cuidado médico de confiança para quem treina, compete e vive em movimento."
+      }
+    }
+  },
+  "explore": {
+    "label": "Explore",
+    "title": "Conheça o nosso mundo",
+    "subtitle": "Descubra tudo o que a Capoeira4Life tem para oferecer: nossos projetos, professores, aulas e eventos.",
+    "cta": "Saber mais",
+    "items": {
+      "nago": {
+        "title": "Capoeira Nagô",
+        "text": "Conheça o nosso grupo, a sua história, os mestres e a tradição afro-brasileira que nos guia."
+      },
+      "capoeirinha": {
+        "title": "O Capoeirinha",
+        "text": "O nosso projeto para crianças: capoeira com diversão, música e movimento desde cedo."
+      },
+      "coaches": {
+        "title": "Professores",
+        "text": "Conheça a equipa que conduz as aulas em Londres, com experiência e dedicação."
+      },
+      "academy": {
+        "title": "Academia",
+        "text": "Veja onde treinamos, os horários das aulas e os valores dos nossos planos."
+      },
+      "events": {
+        "title": "Eventos",
+        "text": "Rodas, batizados, workshops e encontros culturais da nossa comunidade."
+      },
+      "products": {
+        "title": "Produtos",
+        "text": "Instrumentos, uniformes e acessórios oficiais para treinar e viver a capoeira."
+      }
+    }
   },
   "reviews": {
     "title": "Avaliações de Alunos",
@@ -552,14 +667,9 @@
         "title": "Camisa e calça Capoeira Nagô",
         "description": "Uniforme oficial de treino com camisa e calça Capoeira Nagô.",
         "price": "Sob consulta"
-      },
-      "garrafa": {
-        "title": "Garrafa Capoeira4Life / Capoeirinha",
-        "description": "Garrafa reutilizável com a marca do grupo. Modelos Capoeira4Life e Capoeirinha.",
-        "price": "Sob consulta"
       }
     },
-    "note": "Preços e disponibilidade podem variar. Entre em contacto pelo WhatsApp para confirmar tamanhos, cores e prazos de entrega."
+    "note": "Preços e disponibilidade podem variar. Entre em contato pelo WhatsApp para confirmar tamanhos, cores e prazos de entrega."
   },
   "events": {
     "label": "Agenda",
@@ -630,7 +740,7 @@
   },
   "bookClass": {
     "title": "Marque a Sua Aula",
-    "subtitle": "Quer experimentar a capoeira? Preencha o formulário e entraremos em contacto para agendar a sua primeira aula.",
+    "subtitle": "Quer experimentar a capoeira? Preencha o formulário e entraremos em contato para agendar a sua primeira aula.",
     "form": {
       "name": "Nome",
       "namePlaceholder": "O seu nome completo",
@@ -658,14 +768,15 @@
   },
   "footer": {
     "exploreTitle": "Explorar",
-    "contactTitle": "Contacte-nos",
+    "contactTitle": "Fale conosco",
     "contactHint": "Dúvidas sobre aulas, eventos ou parcerias.",
-    "email": "capoeiralifelondon@gmail.com",
+    "email": "info@capoeira4life.com.br",
     "locationTitle": "Onde estamos",
     "locationText": "Moberly Sports Centre, 25 Chamberlayne Rd, London NW10 3NB",
     "followUs": "Siga-nos nas redes sociais",
     "rights": "Capoeira4Life | {{year}} © Todos os direitos reservados",
-    "nagoAlt": "Capoeira Nagô"
+    "nagoAlt": "Capoeira Nagô",
+    "capoeirinhaAlt": "O Capoeirinha"
   },
   "common": {
     "comingSoon": "Conteúdo em breve",

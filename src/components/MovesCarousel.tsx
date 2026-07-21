@@ -55,7 +55,7 @@ export default function MovesCarousel() {
       <div className={slideClass} key={current.id}>
         <div className="moves-carousel__photo">
           {image ? (
-            <img src={image} alt={current.name} className="moves-carousel__photo-img" />
+            <img src={image} alt={current.name} className="moves-carousel__photo-img" loading="lazy" decoding="async" />
           ) : (
             <span>{t('capoeirinha.moves.photoPlaceholder', { move: current.name })}</span>
           )}

@@ -11,9 +11,12 @@ import {
 import academiaInsideImg from '../../assets/image/academia_inside.jpeg'
 import academiaOutsideImg from '../../assets/image/academiaoutside.jpeg'
 import GoogleMapEmbed from '../GoogleMapEmbed'
+import YouTubeEmbed from '../YouTubeEmbed'
 import AcademyPricing from './AcademyPricing'
 import FadeIn from '../FadeIn'
 import './AcademySection.css'
+
+const ACADEMY_VIDEO_ID = 'HAJkIFA6ykw'
 
 type Highlight = {
   title: string
@@ -87,6 +90,8 @@ export default function AcademySection() {
                 src={academiaOutsideImg}
                 alt={t('academy.photos.outsideAlt')}
                 className="academy__photo"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <p className="academy__photo-caption">{t('academy.photos.outsideCaption')}</p>
@@ -98,6 +103,8 @@ export default function AcademySection() {
                 src={academiaInsideImg}
                 alt={t('academy.photos.insideAlt')}
                 className="academy__photo"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <p className="academy__photo-caption">{t('academy.photos.insideCaption')}</p>
@@ -189,6 +196,22 @@ export default function AcademySection() {
               src={ACADEMY_MAPS_EMBED_URL}
               title={t('academy.map.embedTitle', { name: ACADEMY_NAME })}
               className="academy__map-embed"
+            />
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={380}>
+          <div className="academy__video">
+            <div className="academy__video-header">
+              <span className="academy__label">{t('academy.video.label')}</span>
+              <h3 className="academy__video-title">{t('academy.video.title')}</h3>
+              <p className="academy__video-subtitle">{t('academy.video.subtitle')}</p>
+            </div>
+            <YouTubeEmbed
+              videoId={ACADEMY_VIDEO_ID}
+              title={t('academy.video.title')}
+              format="video"
+              className="academy__video-player"
             />
           </div>
         </FadeIn>

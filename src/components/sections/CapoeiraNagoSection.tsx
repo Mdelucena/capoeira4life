@@ -53,6 +53,8 @@ export default function CapoeiraNagoSection() {
                 src={pequinesImg}
                 alt={t('nago.founder.imageAlt')}
                 className="nago__founder-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </FadeIn>
@@ -129,6 +131,8 @@ export default function CapoeiraNagoSection() {
                 src={faixasImg}
                 alt={t('nago.cords.imageAlt')}
                 className="nago__cords-photo"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </FadeIn>

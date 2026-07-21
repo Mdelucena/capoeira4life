@@ -87,6 +87,10 @@ export default function AcademyPricing() {
       <PricingGroup groupKey="kids" plans={KIDS_PRICING} delay={280} />
       <PricingGroup groupKey="adults" plans={ADULTS_PRICING} delay={340} />
 
+      <FadeIn delay={380}>
+        <p className="academy-pricing__private-note">{t('academy.pricing.privateLessons')}</p>
+      </FadeIn>
+
       <FadeIn delay={400}>
         <p className="academy-pricing__footnote">{t('academy.pricing.footnote')}</p>
       </FadeIn>

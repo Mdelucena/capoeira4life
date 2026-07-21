@@ -70,6 +70,8 @@ export default function CoachProfile({ id, reverse = false, className = '' }: Co
           src={coach.image}
           alt={t(`${baseKey}.imageAlt`)}
           className="coach-profile__image"
+          loading="lazy"
+          decoding="async"
         />
         <div className="coach-profile__accent" aria-hidden="true" />
       </div>

@@ -17,8 +17,12 @@ export default function EventModal({ eventId, onClose }: EventModalProps) {
   const title = t(`events.items.${eventId}.title`)
   const body = t(`${baseKey}.body`, { returnObjects: true }) as string[]
   const gallery = event?.gallery ?? []
-  const currentPhoto = gallery[photoIndex]
-  const hasMultiplePhotos = gallery.length > 1
+  const slides: Array<{ type: 'image' | 'video'; src: string }> = [
+    ...gallery.map((src) => ({ type: 'image' as const, src })),
+    ...(event?.video ? [{ type: 'video' as const, src: event.video }] : []),
+  ]
+  const currentSlide = slides[photoIndex]
+  const hasMultipleSlides = slides.length > 1
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -37,11 +41,11 @@ export default function EventModal({ eventId, onClose }: EventModalProps) {
   if (!event?.hasDetail) return null
 
   function goPrev() {
-    setPhotoIndex((prev) => (prev === 0 ? gallery.length - 1 : prev - 1))
+    setPhotoIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1))
   }
 
   function goNext() {
-    setPhotoIndex((prev) => (prev === gallery.length - 1 ? 0 : prev + 1))
+    setPhotoIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1))
   }
 
   return (
@@ -83,14 +87,28 @@ export default function EventModal({ eventId, onClose }: EventModalProps) {
           </div>
 
           <div className="event-modal__media">
-            {currentPhoto && (
+            {currentSlide && (
               <div className="event-modal__gallery">
-                <img
-                  src={currentPhoto}
-                  alt={t('events.modal.photoAlt', { title, index: photoIndex + 1 })}
-                  className="event-modal__photo"
-                />
-                {hasMultiplePhotos && (
+                {currentSlide.type === 'image' ? (
+                  <img
+                    src={currentSlide.src}
+                    alt={t('events.modal.photoAlt', { title, index: photoIndex + 1 })}
+                    className="event-modal__photo"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <video
+                    key={currentSlide.src}
+                    className="event-modal__video"
+                    controls
+                    playsInline
+                    preload="auto"
+                  >
+                    <source src={currentSlide.src} type="video/mp4" />
+                  </video>
+                )}
+                {hasMultipleSlides && (
                   <>
                     <button
                       type="button"
@@ -109,24 +127,10 @@ export default function EventModal({ eventId, onClose }: EventModalProps) {
                       →
                     </button>
                     <span className="event-modal__counter">
-                      {photoIndex + 1} / {gallery.length}
+                      {photoIndex + 1} / {slides.length}
                     </span>
                   </>
                 )}
-              </div>
-            )}
-
-            {event.video && (
-              <div className="event-modal__video-wrap">
-                <h3 className="event-modal__video-title">{t('events.modal.videoTitle')}</h3>
-                <video
-                  className="event-modal__video"
-                  controls
-                  playsInline
-                  preload="auto"
-                >
-                  <source src={event.video} type="video/mp4" />
-                </video>
               </div>
             )}
           </div>

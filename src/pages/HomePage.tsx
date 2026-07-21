@@ -5,6 +5,7 @@ import AboutSection from '../components/sections/AboutSection'
 import HistorySection from '../components/sections/HistorySection'
 import MastersSection from '../components/sections/MastersSection'
 import PartnershipsSection from '../components/sections/PartnershipsSection'
+import ExploreSection from '../components/sections/ExploreSection'
 import ReviewsSection from '../components/sections/ReviewsSection'
 import BookClassSection from '../components/sections/BookClassSection'
 
@@ -14,10 +15,11 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       <main>
+        <PartnershipsSection />
         <AboutSection />
         <HistorySection />
         <MastersSection />
-        <PartnershipsSection />
+        <ExploreSection />
         <ReviewsSection />
         <BookClassSection />
       </main>

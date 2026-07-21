@@ -204,6 +204,28 @@
   border-color: rgba(214, 40, 40, 0.14);
 }
 
+@media (max-width: 900px) {
+  .capoeirinha__highlights {
+    flex-wrap: nowrap;
+    gap: 0.35rem;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .capoeirinha__highlights::-webkit-scrollbar {
+    display: none;
+  }
+
+  .capoeirinha__highlight {
+    flex-shrink: 0;
+    padding: 0.35rem 0.65rem;
+    font-size: 0.6875rem;
+    letter-spacing: 0.01em;
+  }
+}
+
 /* About */
 .capoeirinha__about {
   background: var(--white);
@@ -276,6 +298,18 @@
 
 .capoeirinha__moves-inner {
   text-align: center;
+}
+
+/* Gallery */
+.capoeirinha__gallery {
+  padding: 4.5rem 0 5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, #fafbfd 0%, var(--white) 100%);
+}
+
+.capoeirinha__gallery-inner {
+  max-width: 1200px;
 }
 
 /* Video */
@@ -465,6 +499,68 @@
   height: auto;
 }
 
+/* Schedule */
+.capoeirinha__schedule {
+  padding: 4.5rem 0 4rem;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, #fafbfd 0%, var(--white) 100%);
+}
+
+.capoeirinha__schedule-inner {
+  max-width: 900px;
+}
+
+.capoeirinha__schedule-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 8px 24px rgba(26, 58, 143, 0.06);
+}
+
+.capoeirinha__schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+}
+
+.capoeirinha__schedule-table th,
+.capoeirinha__schedule-table td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.capoeirinha__schedule-table th {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue);
+  background: linear-gradient(180deg, #fafbfd 0%, var(--white) 100%);
+}
+
+.capoeirinha__schedule-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.capoeirinha__schedule-table td {
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+.capoeirinha__schedule-table tbody tr:hover {
+  background: rgba(26, 58, 143, 0.03);
+}
+
+.capoeirinha__schedule-note {
+  margin: 1rem 0 0;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 /* Signup form */
 .capoeirinha__signup {
   padding: 4rem 0 5rem;
@@ -497,7 +593,37 @@
   }
 
   .capoeirinha__features {
-    grid-template-columns: 1fr;
+    display: flex;
+    grid-template-columns: none;
+    gap: 0.875rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.75rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .capoeirinha__features::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .capoeirinha__features::-webkit-scrollbar-thumb {
+    background: rgba(26, 58, 143, 0.25);
+    border-radius: 999px;
+  }
+
+  .capoeirinha__features > * {
+    flex: 0 0 min(85%, 320px);
+    scroll-snap-align: center;
+    min-width: 0;
+  }
+
+  .capoeirinha__feature {
+    height: 100%;
+  }
+
+  .capoeirinha__feature:hover {
+    transform: none;
   }
 
   .capoeirinha__about-inner {
@@ -527,5 +653,79 @@
   .capoeirinha__graduation-frame {
     max-width: 320px;
     margin: 0 auto;
+  }
+
+  .capoeirinha__schedule {
+    padding: 3.5rem 0 3rem;
+  }
+
+  .capoeirinha__schedule-table-wrap {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .capoeirinha__schedule-table {
+    min-width: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .capoeirinha__schedule-table thead {
+    display: none;
+  }
+
+  .capoeirinha__schedule-table tbody {
+    display: flex;
+    gap: 0.875rem;
+  }
+
+  .capoeirinha__schedule-table tr {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1.15rem 1rem;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--red);
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: 0 8px 24px rgba(26, 58, 143, 0.06);
+    scroll-snap-align: center;
+  }
+
+  .capoeirinha__schedule-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .capoeirinha__schedule-table tbody tr:hover {
+    background: var(--white);
+  }
+
+  .capoeirinha__schedule-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.35rem 0;
+    border-bottom: none;
+  }
+
+  .capoeirinha__schedule-table td::before {
+    content: attr(data-label);
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--blue);
+    flex-shrink: 0;
   }
 }

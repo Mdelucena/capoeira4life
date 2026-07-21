@@ -18,7 +18,7 @@ export default function EventCard({ event, onOpen }: EventCardProps) {
     <article className={`event-card${isInteractive ? ' event-card--interactive' : ''}`}>
       <div className="event-card__media">
         {event.image ? (
-          <img src={event.image} alt={title} className="event-card__image" />
+          <img src={event.image} alt={title} className="event-card__image" loading="lazy" decoding="async" />
         ) : (
           <div className="event-card__placeholder">
             <span>{t('events.photoPlaceholder')}</span>

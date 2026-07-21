@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import FadeIn from '../FadeIn'
 import MovesCarousel from '../MovesCarousel'
+import CapoeirinhaGallery from '../CapoeirinhaGallery'
 import CapoeirinhaForm from '../CapoeirinhaForm'
 import YouTubeEmbed from '../YouTubeEmbed'
 import capoeirinhaAvatar from '../../assets/image/capoeirinha.jpeg'
@@ -28,6 +29,8 @@ export default function CapoeirinhaSection() {
                 src={capoeirinhaAvatar}
                 alt={t('capoeirinha.about.avatarAlt')}
                 className="capoeirinha__intro-avatar"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </FadeIn>
@@ -87,6 +90,21 @@ export default function CapoeirinhaSection() {
           </FadeIn>
           <FadeIn delay={120}>
             <MovesCarousel />
+          </FadeIn>
+        </div>
+      </article>
+
+      <article className="capoeirinha__gallery">
+        <div className="container capoeirinha__gallery-inner">
+          <FadeIn delay={0}>
+            <span className="capoeirinha__label capoeirinha__label--center">
+              {t('capoeirinha.gallery.label')}
+            </span>
+            <h3 className="capoeirinha__section-title">{t('capoeirinha.gallery.title')}</h3>
+            <p className="capoeirinha__section-subtitle">{t('capoeirinha.gallery.subtitle')}</p>
+          </FadeIn>
+          <FadeIn delay={120}>
+            <CapoeirinhaGallery />
           </FadeIn>
         </div>
       </article>
@@ -176,8 +194,55 @@ export default function CapoeirinhaSection() {
                 src={graduacaoImg}
                 alt={t('capoeirinha.graduation.imageAlt')}
                 className="capoeirinha__graduation-photo"
+                loading="lazy"
+                decoding="async"
               />
             </div>
+          </FadeIn>
+        </div>
+      </article>
+
+      <article className="capoeirinha__schedule">
+        <div className="container capoeirinha__schedule-inner">
+          <FadeIn delay={0}>
+            <span className="capoeirinha__label capoeirinha__label--center">
+              {t('capoeirinha.schedule.label')}
+            </span>
+            <h3 className="capoeirinha__section-title">{t('capoeirinha.schedule.title')}</h3>
+            <p className="capoeirinha__section-subtitle">{t('capoeirinha.schedule.subtitle')}</p>
+          </FadeIn>
+
+          <FadeIn delay={120}>
+            <div className="capoeirinha__schedule-table-wrap">
+              <table className="capoeirinha__schedule-table">
+                <thead>
+                  <tr>
+                    <th scope="col">{t('capoeirinha.schedule.columns.day')}</th>
+                    <th scope="col">{t('capoeirinha.schedule.columns.class')}</th>
+                    <th scope="col">{t('capoeirinha.schedule.columns.time')}</th>
+                    <th scope="col">{t('capoeirinha.schedule.columns.academy')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {(
+                    t('capoeirinha.schedule.rows', { returnObjects: true }) as {
+                      day: string
+                      class: string
+                      time: string
+                      venue: string
+                    }[]
+                  ).map((row) => (
+                    <tr key={`${row.day}-${row.time}-${row.venue}`}>
+                      <td data-label={t('capoeirinha.schedule.columns.day')}>{row.day}</td>
+                      <td data-label={t('capoeirinha.schedule.columns.class')}>{row.class}</td>
+                      <td data-label={t('capoeirinha.schedule.columns.time')}>{row.time}</td>
+                      <td data-label={t('capoeirinha.schedule.columns.academy')}>{row.venue}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="capoeirinha__schedule-note">{t('capoeirinha.schedule.note')}</p>
           </FadeIn>
         </div>
       </article>

@@ -5,6 +5,7 @@ import berimbau2Img from '../assets/image/produtos/berimbau2.jpeg'
 import berimbau3Img from '../assets/image/produtos/berimbau3.jpeg'
 import camisaCalcaNago1Img from '../assets/image/produtos/camisanago.jpeg'
 import camisaCalcaNago2Img from '../assets/image/produtos/camisanago2.jpeg'
+import camisaCapoeirinhaImg from '../assets/image/eventos/roupacapoeirinha.jpeg'
 import pandeiroImg from '../assets/image/produtos/pandeiro.jpg'
 import tenis1Img from '../assets/image/produtos/tenis1.jpeg'
 import tenis2Img from '../assets/image/produtos/tenis2.jpeg'
@@ -17,7 +18,6 @@ export type ProductId =
   | 'tenis'
   | 'camisa-capoeirinha'
   | 'camisa-calca-nago'
-  | 'garrafa'
 
 export type Product = {
   id: ProductId
@@ -25,6 +25,18 @@ export type Product = {
 }
 
 export const PRODUCTS: Product[] = [
+  {
+    id: 'camisa-capoeirinha',
+    images: [camisaCapoeirinhaImg],
+  },
+  {
+    id: 'camisa-calca-nago',
+    images: [camisaCalcaNago1Img, camisaCalcaNago2Img],
+  },
+  {
+    id: 'tenis',
+    images: [tenis1Img, tenis2Img],
+  },
   {
     id: 'agogo',
     images: [agogoImg],
@@ -40,21 +52,5 @@ export const PRODUCTS: Product[] = [
   {
     id: 'pandeiro',
     images: [pandeiroImg],
-  },
-  {
-    id: 'tenis',
-    images: [tenis1Img, tenis2Img],
-  },
-  {
-    id: 'camisa-capoeirinha',
-    images: [],
-  },
-  {
-    id: 'camisa-calca-nago',
-    images: [camisaCalcaNago1Img, camisaCalcaNago2Img],
-  },
-  {
-    id: 'garrafa',
-    images: [],
   },
 ]

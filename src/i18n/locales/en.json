@@ -62,6 +62,7 @@
       "currency": "£",
       "perMonth": "per month",
       "footnote": "Prices shown are monthly rates within each plan. Contact us to confirm availability and payment options.",
+      "privateLessons": "We also offer private lessons, according to the student and the teacher's availability.",
       "registration": {
         "label": "Registration fee",
         "note": "One-time payment when you join."
@@ -141,11 +142,14 @@
         "porchester": "Porchester Centre"
       },
       "rows": [
-        { "day": "Saturday", "class": "Capoeirinha", "time": "2:15 PM – 3:15 PM", "academyKey": "moberly" },
-        { "day": "Saturday", "class": "Adult capoeira", "time": "3:15 PM – 4:30 PM", "academyKey": "moberly" },
         { "day": "Monday", "class": "Adult capoeira", "time": "6:00 PM – 7:00 PM", "academyKey": "porchester" },
+        { "day": "Tuesday", "class": "Capoeirinha", "time": "4:00 PM – 5:00 PM", "academyKey": "moberly" },
         { "day": "Wednesday", "class": "Adult capoeira", "time": "7:00 PM – 8:00 PM", "academyKey": "coqueiro" },
-        { "day": "Friday", "class": "Adult capoeira", "time": "7:00 PM – 8:00 PM", "academyKey": "coqueiro" }
+        { "day": "Thursday", "class": "Capoeirinha", "time": "4:00 PM – 5:00 PM", "academyKey": "moberly" },
+        { "day": "Thursday", "class": "Adult capoeira", "time": "7:00 PM – 8:30 PM", "academyKey": "moberly" },
+        { "day": "Friday", "class": "Adult capoeira", "time": "7:00 PM – 8:00 PM", "academyKey": "coqueiro" },
+        { "day": "Saturday", "class": "Capoeirinha", "time": "2:15 PM – 3:15 PM", "academyKey": "moberly" },
+        { "day": "Saturday", "class": "Adult capoeira", "time": "3:15 PM – 4:30 PM", "academyKey": "moberly" }
       ]
     },
     "otherVenues": {
@@ -170,6 +174,11 @@
       "label": "Location",
       "title": "How to Get Here",
       "embedTitle": "Map of {{name}}"
+    },
+    "video": {
+      "label": "Watch",
+      "title": "Capoeira4Life in London",
+      "subtitle": "Feel the energy of our roda, classes and Capoeira4Life community."
     }
   },
   "about": {
@@ -201,12 +210,12 @@
     },
     "cords": {
       "label": "Graduation",
-      "title": "Rope Exchange",
-      "lead": "In capoeira, a student's progress is marked by ropes that symbolise level of knowledge, responsibility and dedication to the art.",
+      "title": "Belt Exchange",
+      "lead": "In capoeira, a student's progress is marked by belts that symbolise level of knowledge, responsibility and dedication to the art.",
       "body": [
-        "Unlike other martial arts, capoeira uses ropes rather than rigid belts. Each colour represents a stage on the capoeirista's journey, from beginner student to master. In Capoeira Nagô, the official system includes specific paths for adults, children (5 to 10 years) and youth (11 to 14 years), as shown in the chart.",
-        "A rope exchange is not based on training time alone. The master or teacher evaluates technical growth, musicality, knowledge of history and rituals, behaviour inside and outside the roda, and respect for tradition. Each student progresses at their own pace.",
-        "The exchange ceremony is both festive and solemn: family, friends and the whole roda come together. The capoeirista plays, sings and demonstrates what they have learned. Receiving a new rope also means taking on new responsibilities within the group."
+        "Unlike other martial arts, capoeira uses coloured belts (cordas). Each colour represents a stage on the capoeirista's journey, from beginner student to master. In Capoeira Nagô, the official system includes specific paths for adults, children (5 to 10 years) and youth (11 to 14 years), as shown in the chart.",
+        "A belt exchange is not based on training time alone. The master or teacher evaluates technical growth, musicality, knowledge of history and rituals, behaviour inside and outside the roda, and respect for tradition. Each student progresses at their own pace.",
+        "The exchange ceremony is both festive and solemn: family, friends and the whole roda come together. The capoeirista plays, sings and demonstrates what they have learned. Receiving a new belt also means taking on new responsibilities within the group."
       ],
       "steps": [
         {
@@ -219,10 +228,10 @@
         },
         {
           "title": "Ceremony in the roda",
-          "text": "The new rope is given at a collective event, with games, songs and community celebration."
+          "text": "The new belt is given at a collective event, with games, songs and community celebration."
         }
       ],
-      "imageAlt": "Official Capoeira Nagô graduation system, showing ropes by level and age group"
+      "imageAlt": "Official Capoeira Nagô graduation system, showing belts by level and age group"
     },
     "video": {
       "label": "Teaching",
@@ -304,6 +313,18 @@
         }
       ]
     },
+    "gallery": {
+      "label": "Gallery",
+      "title": "Class Photos — O Capoeirinha Kids",
+      "subtitle": "Moments from our classes with the kids. Swipe sideways to see more.",
+      "empty": "Photos coming soon.",
+      "prev": "Previous photo",
+      "next": "Next photo",
+      "open": "Open photo {{index}} in full size",
+      "close": "Close photo",
+      "lightboxLabel": "Full-size photo viewer",
+      "photoAlt": "Photo {{index}} from O Capoeirinha Kids classes"
+    },
     "video": {
       "label": "Watch",
       "title": "How Does a Class Work?",
@@ -327,17 +348,17 @@
     },
     "graduation": {
       "label": "Graduations",
-      "title": "Ropes for Children & Teens",
+      "title": "Belts for Children & Teens",
       "lead": "Graduation in Capoeirinha celebrates effort, technical growth and respect for capoeira culture.",
       "body": [
-        "Children and teenagers earn ropes as they progress in class. Each colour marks a stage of learning, from first steps to more advanced movements.",
+        "Children and teenagers earn belts as they progress in class. Each colour marks a stage of learning, from first steps to more advanced movements.",
         "Evaluations consider participation, respect, musicality and mastery of fundamentals, not just physical ability. Every child grows at their own pace.",
         "Teens follow a progressive path that prepares them for the adult graduation system, keeping the same values of discipline and cultural identity."
       ],
       "steps": [
         {
           "title": "Progressive evolution",
-          "text": "Each rope represents a new challenge conquered with dedication in class."
+          "text": "Each belt represents a new challenge conquered with dedication in class."
         },
         {
           "title": "Fair criteria",
@@ -348,7 +369,39 @@
           "text": "Graduation ceremonies are festive moments with family, friends and the whole roda."
         }
       ],
-      "imageAlt": "Graduated child wearing a capoeira rope, Capoeira Nagô"
+      "imageAlt": "Graduated child wearing a capoeira belt, Capoeira Nagô"
+    },
+    "schedule": {
+      "label": "Schedule",
+      "title": "Capoeirinha Class Schedule",
+      "subtitle": "Check the day and time of Capoeirinha classes.",
+      "note": "Please confirm availability before your first class.",
+      "columns": {
+        "day": "Day",
+        "class": "Class",
+        "time": "Time",
+        "academy": "Venue"
+      },
+      "rows": [
+        {
+          "day": "Tuesday",
+          "class": "Capoeirinha",
+          "time": "4:00 PM – 5:00 PM",
+          "venue": "Moberly Sports Centre"
+        },
+        {
+          "day": "Thursday",
+          "class": "Capoeirinha",
+          "time": "4:00 PM – 5:00 PM",
+          "venue": "Moberly Sports Centre"
+        },
+        {
+          "day": "Saturday",
+          "class": "Capoeirinha",
+          "time": "2:15 PM – 3:15 PM",
+          "venue": "Moberly Sports Centre"
+        }
+      ]
     },
     "form": {
       "label": "Trial class",
@@ -387,7 +440,11 @@
     "label": "History",
     "title": "Capoeira",
     "lead": "A martial art, dance and culture born from the resistance of African peoples in Brazil.",
-    "body": "Created during the colonial period as a form of physical and cultural resistance, capoeira disguised fighting moves with music, dance and rhythm to evade surveillance on the plantations. Banned after abolition in 1888, it was only legitimised in the 1930s, when Mestre Bimba founded Capoeira Regional and Mestre Pastinha codified Capoeira Angola. In 2014, UNESCO recognised the Capoeira Circle as Intangible Cultural Heritage of Humanity.",
+    "paragraphs": [
+      "Created during the colonial period as a form of physical and cultural resistance, capoeira was born among enslaved African peoples in Brazil, especially in Bahia. On the plantations and in quilombos, strikes, escapes and acrobatics were disguised with music, dance and rhythm to evade the surveillance of slave owners.",
+      "After abolition in 1888, the practice was criminalised and persecuted in the cities. Even so, it survived in the streets, terreiros and rodas, preserving the berimbau, atabaque, pandeiro and the songs that still guide the game today.",
+      "In the 1930s, capoeira gained institutional recognition: Mestre Bimba structured Capoeira Regional and Mestre Pastinha consolidated Capoeira Angola. In 2014, UNESCO recognised the Capoeira Circle as Intangible Cultural Heritage of Humanity, and today it is practised worldwide as an expression of fight, art and community."
+    ],
     "cta": "Meet the Masters",
     "imageAlt": "Capoeira roda with practitioners in motion",
     "imageAlt2": "Capoeira practitioners in action during roda",
@@ -400,6 +457,18 @@
     "subtitle": "Capoeira4Life coaches who lead classes in London.",
     "achievementsTitle": "Highlights",
     "followInstagram": "Follow on Instagram",
+    "classes": {
+      "label": "In class",
+      "title": "What capoeira classes are like",
+      "lead": "Movement, music and community in every session",
+      "imageAlt": "Capoeira4Life coaches together",
+      "cta": "See schedules and academy",
+      "paragraphs": [
+        "In Capoeira4Life classes you get ginga, sequences, music and the roda in the same space. We start with a warm-up and fundamentals, move into techniques and combinations, and finish by playing, singing and training together.",
+        "The training suits every level. Beginners learn at their own pace, with clear guidance from the coaches. Experienced players find challenge, musicality and steady progress.",
+        "More than technique, the classes are about community. Respect, energy and Afro-Brazilian culture shape every session, so adults and children feel part of the roda from day one."
+      ]
+    },
     "items": {
       "fabricio": {
         "role": "Master, Capoeira Nagô",
@@ -483,7 +552,53 @@
   },
   "partnerships": {
     "title": "Partnerships",
-    "empty": "No partnerships at the moment."
+    "empty": "No partnerships at the moment.",
+    "items": {
+      "dbroa": {
+        "name": "D'Broa",
+        "phrase": "A Brazilian bakery and café with soul, right next to our London community."
+      },
+      "polimax": {
+        "name": "Polimax",
+        "phrase": "Leading car styling and vehicle protection in the capital."
+      },
+      "lambert": {
+        "name": "Lambert",
+        "phrase": "Trusted medical care for people who train, compete and stay active."
+      }
+    }
+  },
+  "explore": {
+    "label": "Explore",
+    "title": "Discover our world",
+    "subtitle": "Find out everything Capoeira4Life has to offer: our projects, teachers, classes and events.",
+    "cta": "Learn more",
+    "items": {
+      "nago": {
+        "title": "Capoeira Nagô",
+        "text": "Get to know our group, its history, the masters and the Afro-Brazilian tradition that guides us."
+      },
+      "capoeirinha": {
+        "title": "O Capoeirinha",
+        "text": "Our project for kids: capoeira with fun, music and movement from an early age."
+      },
+      "coaches": {
+        "title": "Teachers",
+        "text": "Meet the team that leads the classes in London, with experience and dedication."
+      },
+      "academy": {
+        "title": "Academy",
+        "text": "See where we train, the class schedule and the prices of our plans."
+      },
+      "events": {
+        "title": "Events",
+        "text": "Rodas, batizados, workshops and cultural gatherings from our community."
+      },
+      "products": {
+        "title": "Products",
+        "text": "Official instruments, uniforms and accessories to train and live capoeira."
+      }
+    }
   },
   "reviews": {
     "title": "Student Reviews",
@@ -551,11 +666,6 @@
       "camisa-calca-nago": {
         "title": "Capoeira Nagô shirt & trousers",
         "description": "Official training uniform with Capoeira Nagô shirt and trousers.",
-        "price": "On request"
-      },
-      "garrafa": {
-        "title": "Capoeira4Life / Capoeirinha bottle",
-        "description": "Reusable water bottle with group branding. Capoeira4Life and Capoeirinha designs.",
         "price": "On request"
       }
     },
@@ -660,12 +770,13 @@
     "exploreTitle": "Explore",
     "contactTitle": "Contact us",
     "contactHint": "Questions about classes, events or partnerships.",
-    "email": "capoeiralifelondon@gmail.com",
+    "email": "info@capoeira4life.com.br",
     "locationTitle": "Find us",
     "locationText": "Moberly Sports Centre, 25 Chamberlayne Rd, London NW10 3NB",
     "followUs": "Follow us on social media",
     "rights": "Capoeira4Life | Copyright {{year}} © All rights reserved",
-    "nagoAlt": "Capoeira Nagô"
+    "nagoAlt": "Capoeira Nagô",
+    "capoeirinhaAlt": "O Capoeirinha"
   },
   "common": {
     "comingSoon": "Content coming soon",

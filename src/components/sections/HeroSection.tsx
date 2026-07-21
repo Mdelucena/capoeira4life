@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import FadeIn from '../FadeIn'
+import heroVideo from '../../assets/image/Capoeira 4 Life.mp4'
 import './HeroSection.css'
 
 export default function HeroSection() {
@@ -8,11 +9,21 @@ export default function HeroSection() {
 
   return (
     <section id="inicio" className="hero">
-      <FadeIn className="hero__video-wrap" delay={0}>
-        <div className="hero__media placeholder">
-          {t('hero.videoPlaceholder')}
+      <div className="hero__video-wrap">
+        <div className="hero__media">
+          <video
+            className="hero__video"
+            src={heroVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label={t('hero.title')}
+          />
+          <div className="hero__media-overlay" aria-hidden="true" />
         </div>
-      </FadeIn>
+      </div>
 
       <div className="hero__intro">
         <FadeIn delay={120}>

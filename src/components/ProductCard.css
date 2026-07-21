@@ -11,9 +11,15 @@
 
 .product-card__media {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   background: #f4f6fa;
   overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .product-card__media {
+    aspect-ratio: 5 / 4;
+  }
 }
 
 .product-card__image {

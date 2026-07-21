@@ -218,6 +218,20 @@
   box-shadow: 0 0 0 3px rgba(214, 40, 40, 0.15);
 }
 
+.academy-pricing__private-note {
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--blue);
+  line-height: 1.65;
+  border: 1px solid rgba(26, 58, 143, 0.12);
+  border-left: 4px solid var(--red);
+  border-radius: 12px;
+  background: var(--white);
+}
+
 .academy-pricing__footnote {
   margin: 0;
   text-align: center;
@@ -233,13 +247,35 @@
   }
 
   .academy-pricing__cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
+    grid-template-columns: none;
+    gap: 0.875rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1rem;
+    padding: 0.25rem 0.25rem 1rem;
+    margin-inline: -0.25rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
   }
-}
 
-@media (max-width: 520px) {
-  .academy-pricing__cards {
-    grid-template-columns: 1fr;
+  .academy-pricing__cards::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .academy-pricing__cards::-webkit-scrollbar-thumb {
+    background: rgba(26, 58, 143, 0.25);
+    border-radius: 999px;
+  }
+
+  .academy-pricing__card {
+    flex: 0 0 min(78vw, 280px);
+    min-height: 0;
+    scroll-snap-align: center;
+  }
+
+  .academy-pricing__card:hover {
+    transform: none;
   }
 }
 

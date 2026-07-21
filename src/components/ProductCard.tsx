@@ -49,6 +49,8 @@ export default function ProductCard({ product }: ProductCardProps) {
               src={currentImage}
               alt={title}
               className="product-card__image"
+              loading="lazy"
+              decoding="async"
             />
             {hasMultipleImages && (
               <>

@@ -52,6 +52,28 @@
 
 @media (max-width: 900px) {
   .about__grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    grid-template-columns: none;
+    gap: 0.875rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.75rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .about__grid::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .about__grid::-webkit-scrollbar-thumb {
+    background: rgba(26, 58, 143, 0.25);
+    border-radius: 999px;
+  }
+
+  .about__card {
+    flex: 0 0 min(85%, 320px);
+    scroll-snap-align: center;
+    min-width: 0;
   }
 }

@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import FlagIcon from './FlagIcon'
 import { languages, type Language } from '../i18n'
+import capoeirinhaLogo from '../assets/image/capo.png'
 import './Header.css'
 
 type HeaderProps = {
@@ -11,12 +12,12 @@ type HeaderProps = {
 
 const navItems = [
   { key: 'nav.home', to: '/' },
-  { key: 'nav.capoeiraNago', to: '/capoeira-nago' },
   { key: 'nav.capoeirinha', to: '/capoeirinha' },
-  { key: 'nav.coaches', to: '/professores' },
   { key: 'nav.academy', to: '/academia' },
+  { key: 'nav.coaches', to: '/professores' },
   { key: 'nav.products', to: '/produtos' },
   { key: 'nav.events', to: '/eventos' },
+  { key: 'nav.capoeiraNago', to: '/capoeira-nago' },
 ] as const
 
 function linkClassName(isActive: boolean) {
@@ -90,6 +91,14 @@ export default function Header({ overlay = false }: HeaderProps) {
             ))}
           </div>
         </nav>
+
+        <Link
+          to="/capoeirinha"
+          className="header__logo header__logo--capoeirinha"
+          onClick={closeMenu}
+        >
+          <img src={capoeirinhaLogo} alt={t('footer.capoeirinhaAlt')} />
+        </Link>
       </div>
     </header>
   )
