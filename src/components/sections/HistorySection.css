@@ -240,6 +240,8 @@
     padding: 1.25rem 1.5rem 2rem;
     gap: 1.125rem;
     height: auto;
+    align-items: center;
+    text-align: center;
   }
 
   .history__text > :last-child {
@@ -248,6 +250,23 @@
 
   .history__text::before {
     display: none;
+  }
+
+  .history__header {
+    align-items: center;
+  }
+
+  .history__label {
+    justify-content: center;
+  }
+
+  .history__lead {
+    padding: 0;
+    border-left: none;
+  }
+
+  .history__cta {
+    align-self: center;
   }
 
   .history__gallery {

@@ -217,13 +217,23 @@
 
   .coaches__classes-text {
     padding: 0 1.5rem !important;
+    align-items: center;
+    text-align: center;
   }
 
   .coaches__classes-text::before {
     display: none;
   }
 
+  .coaches__classes-header {
+    align-items: center;
+  }
+
   .coaches__classes-body {
     max-width: none;
+  }
+
+  .coaches__classes-cta {
+    align-self: center;
   }
 }

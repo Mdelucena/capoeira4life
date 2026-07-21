@@ -20,6 +20,11 @@
   .product-card__media {
     aspect-ratio: 5 / 4;
   }
+
+  .product-card__body {
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .product-card__image {

@@ -101,5 +101,10 @@
     max-width: 100%;
     scroll-snap-align: center;
     box-sizing: border-box;
+    text-align: center;
+  }
+
+  .reviews__author {
+    justify-content: center;
   }
 }

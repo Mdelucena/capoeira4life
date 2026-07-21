@@ -551,7 +551,18 @@
     "pastinhaImageAlt": "Mestre Pastinha, guardián de la Capoeira Angola"
   },
   "partnerships": {
-    "title": "Alianzas",
+    "label": "Apoyo",
+    "title": "Alianzas que fortalecen la roda",
+    "lead": "Marcas y negocios que caminan con Capoeira4Life en Londres. Juntos ampliamos clases, eventos y la cultura afrobrasileña en la ciudad.",
+    "benefits": [
+      "Visibilidad en la comunidad",
+      "Presencia en eventos",
+      "Asociación a deporte y cultura"
+    ],
+    "visitSite": "Visitar sitio",
+    "ctaText": "¿Quieres apoyar el proyecto con patrocinio o una alianza local?",
+    "cta": "Quiero ser partner",
+    "whatsappMessage": "¡Hola! Quiero saber más sobre alianzas y patrocinio con Capoeira4Life.",
     "empty": "Ninguna alianza por el momento.",
     "items": {
       "dbroa": {

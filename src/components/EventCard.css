@@ -104,3 +104,14 @@
   transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(26, 58, 143, 0.2);
 }
+
+@media (max-width: 900px) {
+  .event-card__body {
+    text-align: center;
+    align-items: center;
+  }
+
+  .event-card__button {
+    align-self: center;
+  }
+}

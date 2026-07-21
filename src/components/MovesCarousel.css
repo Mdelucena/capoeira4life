@@ -231,6 +231,10 @@
     aspect-ratio: 4 / 3;
   }
 
+  .moves-carousel__info {
+    text-align: center;
+  }
+
   .moves-carousel__dots {
     position: static;
     transform: none;

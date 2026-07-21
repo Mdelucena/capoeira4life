@@ -586,10 +586,23 @@
 
   .capoeirinha__intro-content {
     padding-left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .capoeirinha__intro-content::before {
     display: none;
+  }
+
+  .capoeirinha__intro-content .capoeirinha__label {
+    justify-content: center;
+  }
+
+  .capoeirinha__intro-content .capoeirinha__lead {
+    padding-left: 0;
+    border-left: none;
   }
 
   .capoeirinha__features {
@@ -601,6 +614,8 @@
     padding-bottom: 0.75rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
+    text-align: center;
+    justify-content: safe center;
   }
 
   .capoeirinha__features::-webkit-scrollbar {
@@ -620,6 +635,7 @@
 
   .capoeirinha__feature {
     height: 100%;
+    text-align: center;
   }
 
   .capoeirinha__feature:hover {
@@ -630,14 +646,29 @@
     padding: 3rem 1.5rem;
   }
 
+  .capoeirinha__about-mascot {
+    text-align: center;
+    border-left: none;
+    border-top: 3px solid var(--red);
+    border-radius: 12px;
+    padding: 1.5rem 1.25rem;
+  }
+
   .capoeirinha__video-card {
     grid-template-columns: 1fr;
     gap: 1.75rem;
     padding: 1.5rem;
+    text-align: center;
   }
 
   .capoeirinha__video-media {
     width: 100%;
+  }
+
+  .capoeirinha__video-point {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .capoeirinha__graduation-split {
@@ -653,6 +684,27 @@
   .capoeirinha__graduation-frame {
     max-width: 320px;
     margin: 0 auto;
+  }
+
+  .capoeirinha__graduation-text {
+    text-align: center;
+  }
+
+  .capoeirinha__graduation-text .capoeirinha__label {
+    justify-content: center;
+  }
+
+  .capoeirinha__graduation-text .capoeirinha__lead {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .capoeirinha__graduation-step {
+    text-align: center;
+    border-left: none;
+    border-top: 3px solid var(--red);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
   }
 
   .capoeirinha__schedule {

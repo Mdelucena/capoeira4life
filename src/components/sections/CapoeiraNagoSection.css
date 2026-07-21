@@ -397,15 +397,29 @@
 
   .nago__intro-text {
     padding-left: 0;
+    text-align: center;
   }
 
   .nago__intro-text::before {
     display: none;
   }
 
+  .nago__intro-text .nago__label {
+    justify-content: center;
+  }
+
+  .nago__intro-text .nago__lead {
+    padding-left: 0;
+    border-left: none;
+  }
+
   .nago__founder-split {
     grid-template-columns: 1fr;
     padding: 3rem 1.5rem;
+  }
+
+  .nago__founder-text {
+    text-align: center;
   }
 
   .nago__founder-frame {
@@ -433,9 +447,25 @@
     max-width: 100%;
   }
 
+  .nago__cords-text {
+    text-align: center;
+  }
+
+  .nago__cords-text .nago__label {
+    justify-content: center;
+  }
+
   .nago__cords-text .nago__lead {
     padding-left: 0;
     border-left: none;
+  }
+
+  .nago__cords-step {
+    text-align: center;
+    border-left: none;
+    border-top: 3px solid var(--blue);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
   }
 }
 

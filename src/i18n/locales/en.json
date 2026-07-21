@@ -551,7 +551,18 @@
     "pastinhaImageAlt": "Mestre Pastinha, guardian of Capoeira Angola"
   },
   "partnerships": {
-    "title": "Partnerships",
+    "label": "Support",
+    "title": "Partnerships that strengthen the roda",
+    "lead": "Brands and businesses walking with Capoeira4Life in London. Together we grow classes, events and Afro-Brazilian culture across the city.",
+    "benefits": [
+      "Visibility in the community",
+      "Presence at events",
+      "Association with sport and culture"
+    ],
+    "visitSite": "Visit website",
+    "ctaText": "Want to support the project with sponsorship or a local partnership?",
+    "cta": "I want to partner",
+    "whatsappMessage": "Hello! I would like to know more about partnerships and sponsorship with Capoeira4Life.",
     "empty": "No partnerships at the moment.",
     "items": {
       "dbroa": {

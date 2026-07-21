@@ -136,6 +136,11 @@
 
   .explore__card {
     height: 100%;
+    text-align: center;
+  }
+
+  .explore__card-cta {
+    justify-content: center;
   }
 
   .explore__card:hover {

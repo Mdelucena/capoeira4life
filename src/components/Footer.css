@@ -258,6 +258,31 @@
     row-gap: 0;
   }
 
+  .footer__col {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__title {
+    align-self: center;
+  }
+
+  .footer__links {
+    align-items: center;
+  }
+
+  .footer__links a:hover {
+    padding-left: 0;
+  }
+
+  .footer__social-icons {
+    justify-content: center;
+  }
+
+  .footer__muted {
+    margin-inline: auto;
+  }
+
   .footer__logo {
     height: 42px;
   }

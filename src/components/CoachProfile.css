@@ -194,10 +194,16 @@
 
   .coach-profile__text {
     padding: 0 1.5rem !important;
+    align-items: center;
+    text-align: center;
   }
 
   .coach-profile__text::before {
     display: none !important;
+  }
+
+  .coach-profile__header {
+    align-items: center;
   }
 
   .coach-profile__media {
@@ -211,5 +217,14 @@
   .coach-profile__body,
   .coach-profile__highlights-list {
     max-width: none;
+  }
+
+  .coach-profile__highlights-list {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  .coach-profile__instagram {
+    align-self: center;
   }
 }

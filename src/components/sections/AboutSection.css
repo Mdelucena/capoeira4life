@@ -3,6 +3,10 @@
   background: var(--white);
 }
 
+.about.section {
+  padding-top: 2.75rem;
+}
+
 .about__title {
   display: flex;
   flex-direction: column;
@@ -60,6 +64,7 @@
     padding-bottom: 0.75rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
+    justify-content: safe center;
   }
 
   .about__grid::-webkit-scrollbar {
@@ -75,5 +80,10 @@
     flex: 0 0 min(85%, 320px);
     scroll-snap-align: center;
     min-width: 0;
+    text-align: center;
+  }
+
+  .about__text {
+    text-align: center;
   }
 }

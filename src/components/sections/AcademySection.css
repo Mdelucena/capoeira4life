@@ -387,6 +387,12 @@
 
   .academy__intro {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .academy__prose {
+    align-items: center;
+    text-align: center;
   }
 
   .academy__lead {
@@ -394,12 +400,37 @@
     border-left: none;
   }
 
+  .academy__venue-card {
+    text-align: center;
+  }
+
+  .academy__venue-link {
+    justify-content: center;
+  }
+
   .academy__gallery {
     grid-template-columns: 1fr;
   }
 
+  .academy__photo-caption {
+    text-align: center;
+  }
+
   .academy__highlights {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .academy__other-academies {
+    text-align: center;
+  }
+
+  .academy__other-academies-list {
+    align-items: center;
+  }
+
+  .academy__other-academies-item {
+    text-align: center;
   }
 
   .academy__schedule-table-wrap {
