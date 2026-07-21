@@ -109,14 +109,18 @@
   }
 
   .explore__grid {
+    --snap-size: min(78vw, 300px);
     display: flex;
     grid-template-columns: none;
     gap: 0.875rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-padding-inline: max(0px, calc((100% - var(--snap-size)) / 2));
+    padding-inline: max(0px, calc((100% - var(--snap-size)) / 2));
     padding-bottom: 0.75rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
+    justify-content: flex-start;
   }
 
   .explore__grid::-webkit-scrollbar {
@@ -129,7 +133,7 @@
   }
 
   .explore__grid > * {
-    flex: 0 0 min(85%, 320px);
+    flex: 0 0 var(--snap-size);
     scroll-snap-align: center;
     min-width: 0;
   }

@@ -606,16 +606,19 @@
   }
 
   .capoeirinha__features {
+    --snap-size: min(78vw, 300px);
     display: flex;
     grid-template-columns: none;
     gap: 0.875rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-padding-inline: max(0px, calc((100% - var(--snap-size)) / 2));
+    padding-inline: max(0px, calc((100% - var(--snap-size)) / 2));
     padding-bottom: 0.75rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
     text-align: center;
-    justify-content: safe center;
+    justify-content: flex-start;
   }
 
   .capoeirinha__features::-webkit-scrollbar {
@@ -628,7 +631,7 @@
   }
 
   .capoeirinha__features > * {
-    flex: 0 0 min(85%, 320px);
+    flex: 0 0 var(--snap-size);
     scroll-snap-align: center;
     min-width: 0;
   }

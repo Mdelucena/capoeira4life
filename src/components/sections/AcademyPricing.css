@@ -247,16 +247,20 @@
   }
 
   .academy-pricing__cards {
+    --snap-size: min(78vw, 280px);
     display: flex;
     grid-template-columns: none;
     gap: 0.875rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-padding-inline: 1rem;
-    padding: 0.25rem 0.25rem 1rem;
-    margin-inline: -0.25rem;
+    scroll-padding-inline: max(0px, calc((100% - var(--snap-size)) / 2));
+    padding-inline: max(0px, calc((100% - var(--snap-size)) / 2));
+    padding-bottom: 1rem;
+    padding-top: 0.25rem;
+    margin-inline: 0;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
+    justify-content: flex-start;
   }
 
   .academy-pricing__cards::-webkit-scrollbar {
@@ -269,7 +273,7 @@
   }
 
   .academy-pricing__card {
-    flex: 0 0 min(78vw, 280px);
+    flex: 0 0 var(--snap-size);
     min-height: 0;
     scroll-snap-align: center;
   }
