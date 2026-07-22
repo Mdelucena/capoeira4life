@@ -1,20 +1,25 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import type { Product } from '../data/products'
-import { formatWhatsAppField, openWhatsAppMessage } from '../utils/whatsappForm'
+import { getProductSizeLabel } from '../data/products'
 import './ProductCard.css'
 
 type ProductCardProps = {
   product: Product
+  onAddToCart: (productId: Product['id'], size?: string) => void
 }
 
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard({ product, onAddToCart }: ProductCardProps) {
   const { t } = useTranslation()
   const [imageIndex, setImageIndex] = useState(0)
+  const [justAdded, setJustAdded] = useState(false)
+  const [selectedSize, setSelectedSize] = useState('')
+  const [sizeError, setSizeError] = useState(false)
 
   const title = t(`products.items.${product.id}.title`)
   const description = t(`products.items.${product.id}.description`)
   const price = t(`products.items.${product.id}.price`)
+  const hasSizes = Boolean(product.sizes?.length)
 
   const totalImages = product.images.length
   const currentImage = product.images[imageIndex]
@@ -28,16 +33,16 @@ export default function ProductCard({ product }: ProductCardProps) {
     setImageIndex((prev) => (prev === totalImages - 1 ? 0 : prev + 1))
   }
 
-  function handleOrder() {
-    const message = [
-      t('products.whatsappIntro'),
-      '',
-      formatWhatsAppField(t('products.whatsappProductLabel'), title),
-      '',
-      t('products.whatsappClosing'),
-    ].join('\n')
+  function handleAdd() {
+    if (hasSizes && !selectedSize) {
+      setSizeError(true)
+      return
+    }
 
-    openWhatsAppMessage(message)
+    onAddToCart(product.id, hasSizes ? selectedSize : undefined)
+    setJustAdded(true)
+    setSizeError(false)
+    window.setTimeout(() => setJustAdded(false), 1200)
   }
 
   return (
@@ -87,8 +92,38 @@ export default function ProductCard({ product }: ProductCardProps) {
         <h3 className="product-card__title">{title}</h3>
         <p className="product-card__description">{description}</p>
         <p className="product-card__price">{price}</p>
-        <button type="button" className="product-card__order" onClick={handleOrder}>
-          {t('products.orderButton')}
+
+        {hasSizes && (
+          <div className="product-card__sizes">
+            <label className="product-card__sizes-label" htmlFor={`size-${product.id}`}>
+              {product.id === 'tenis' ? t('products.sizeLabelShoes') : t('products.sizeLabelClothes')}
+            </label>
+            <select
+              id={`size-${product.id}`}
+              className={`product-card__sizes-select ${sizeError ? 'product-card__sizes-select--error' : ''}`}
+              value={selectedSize}
+              onChange={(event) => {
+                setSelectedSize(event.target.value)
+                setSizeError(false)
+              }}
+            >
+              <option value="">{t('products.sizePlaceholder')}</option>
+              {product.sizes?.map((size) => (
+                <option key={size} value={size}>
+                  {getProductSizeLabel(t, size)}
+                </option>
+              ))}
+            </select>
+            {sizeError && <p className="product-card__sizes-error">{t('products.sizeRequired')}</p>}
+          </div>
+        )}
+
+        <button
+          type="button"
+          className={`product-card__order ${justAdded ? 'product-card__order--added' : ''}`}
+          onClick={handleAdd}
+        >
+          {justAdded ? t('products.addedToCart') : t('products.addToCart')}
         </button>
       </div>
     </article>
