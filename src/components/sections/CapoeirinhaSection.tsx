@@ -8,7 +8,7 @@ import capoeirinhaAvatar from '../../assets/image/capoeirinha.jpeg'
 import graduacaoImg from '../../assets/image/criançacerti.jpeg'
 import './CapoeirinhaSection.css'
 
-const CAPOEIRINHA_VIDEO_ID = 'PZMuPfSBNiU'
+const CAPOEIRINHA_VIDEO_ID = 'UnSI8_cuGPI'
 
 export default function CapoeirinhaSection() {
   const { t } = useTranslation()
