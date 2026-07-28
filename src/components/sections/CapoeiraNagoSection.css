@@ -155,10 +155,13 @@
   margin: 0 0 1rem;
 }
 
-/* Genealogy */
+/* Masters */
 .nago__genealogy {
-  padding: 4.5rem 0;
+  padding: 3.25rem 0 3.75rem;
   border-bottom: 1px solid var(--border);
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 0%, rgba(26, 58, 143, 0.06), transparent 70%),
+    linear-gradient(180deg, #f6f8fc 0%, var(--white) 72%);
 }
 
 .nago__genealogy-inner {
@@ -166,108 +169,164 @@
 }
 
 .nago__genealogy-title {
-  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
   font-weight: 900;
   color: var(--blue);
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.4rem;
 }
 
 .nago__genealogy-subtitle {
   font-size: 0.9375rem;
   color: var(--text-muted);
-  margin: 0 0 2.5rem;
+  margin: 0 auto 2rem;
+  max-width: 36rem;
 }
 
-.nago__tree {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.nago__tree-levels {
+.nago__masters {
   display: flex;
   flex-direction: column;
-  gap: 0.875rem;
-  padding-top: 1rem;
+  gap: 2.25rem;
+  text-align: left;
 }
 
-.nago__tree-root {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
-}
-
-.nago__tree-line {
-  width: 2px;
-  height: 40px;
-  background: linear-gradient(180deg, var(--blue), var(--red));
-  margin: 0 auto;
-}
-
-.nago__tree-row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.875rem;
-  position: relative;
-}
-
-.nago__tree-node {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  padding: 0.75rem 1rem;
-  background: var(--white);
-  border: 2px solid var(--border);
-  border-top: 3px solid var(--blue);
-  border-radius: 8px;
-  min-width: 0;
-  text-align: center;
-  cursor: pointer;
-  transform-origin: center;
-  transition:
-    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.28s ease,
-    border-color 0.28s ease;
-}
-
-.nago__tree-node:hover {
-  transform: scale(1.08);
-  z-index: 2;
-  box-shadow: 0 14px 32px rgba(26, 58, 143, 0.16);
-  border-color: rgba(26, 58, 143, 0.3);
-}
-
-.nago__tree-node--root:hover {
-  border-top-color: var(--red);
-}
-
-.nago__tree-name {
-  font-size: 0.8125rem;
+.nago__masters-col-label {
+  margin: 0 0 0.9rem;
+  font-size: 0.6875rem;
   font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.nago__masters-featured-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.15rem;
+}
+
+.nago__master-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid rgba(26, 58, 143, 0.12);
+  border-top: 4px solid var(--red);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(26, 58, 143, 0.08);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.nago__master-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(214, 40, 40, 0.35);
+  box-shadow: 0 18px 40px rgba(26, 58, 143, 0.14);
+}
+
+.nago__master-card-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  object-position: center 12%;
+  border-radius: 0;
+  background: #0b1f4a;
+  display: block;
+}
+
+.nago__master-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  padding: 0.95rem 1.05rem 1.1rem;
+  min-width: 0;
+}
+
+.nago__master-card-name {
+  font-size: 1.1rem;
+  font-weight: 800;
   color: var(--blue);
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
-.nago__tree-flag {
-  display: inline-flex;
-  justify-content: center;
-}
-
-.nago__tree-flag svg {
+.nago__master-card-flag svg {
   width: 28px;
   height: auto;
   border-radius: 3px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
-.nago__tree-node--root {
-  border-top-color: var(--red);
-  padding: 1rem 1.75rem;
+.nago__master-card-hint {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
 }
 
-.nago__tree-node--root .nago__tree-name {
-  font-size: 0.9375rem;
+.nago__masters-featured-note {
+  margin: 1rem 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nago__masters-others-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.nago__master-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.75rem 0.6rem;
+  background: var(--white);
+  border: 1px solid rgba(26, 58, 143, 0.1);
+  border-top: 3px solid var(--blue);
+  border-radius: 10px;
+  text-align: center;
+  min-width: 0;
+  box-shadow: 0 4px 14px rgba(26, 58, 143, 0.04);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.nago__master-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(26, 58, 143, 0.1);
+}
+
+.nago__master-chip-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--blue);
+  line-height: 1.25;
+}
+
+.nago__master-chip-flag svg {
+  width: 24px;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* Cords */
@@ -426,12 +485,53 @@
     max-width: 100%;
   }
 
-  .nago__tree-row {
-    grid-template-columns: 1fr;
+  .nago__masters {
+    gap: 1.75rem;
   }
 
-  .nago__tree-node:hover {
-    transform: scale(1.04);
+  .nago__masters-featured,
+  .nago__masters-others {
+    text-align: center;
+  }
+
+  .nago__masters-col-label {
+    text-align: center;
+  }
+
+  .nago__masters-featured-list {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .nago__master-card {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 0.65rem 0.8rem 0.65rem 0.65rem;
+    gap: 0.75rem;
+  }
+
+  .nago__master-card-photo {
+    width: 92px;
+    height: 92px;
+    flex-shrink: 0;
+    aspect-ratio: auto;
+    border-radius: 10px;
+    object-position: 72% 15%;
+  }
+
+  .nago__master-card-info {
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .nago__master-card-name {
+    font-size: 1rem;
+  }
+
+  .nago__masters-others-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
   }
 
   .nago__cords-split {
@@ -469,12 +569,20 @@
   }
 }
 
+@media (max-width: 1100px) and (min-width: 901px) {
+  .nago__masters-others-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .nago__tree-node {
-    transition: box-shadow 0.28s ease, border-color 0.28s ease;
+  .nago__master-card,
+  .nago__master-chip {
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
   }
 
-  .nago__tree-node:hover {
+  .nago__master-card:hover,
+  .nago__master-chip:hover {
     transform: none;
   }
 }

@@ -204,9 +204,38 @@
       "imageAlt": "Mestre Pequinês, fundador da Capoeira Nagô"
     },
     "genealogy": {
-      "label": "Linha",
-      "title": "Árvore Genealógica",
-      "subtitle": "Mestres formados por Mestre Pequinês, espalhados pelo mundo"
+      "label": "Mestres",
+      "title": "Mestres da Capoeira Nagô",
+      "subtitle": "Formados por Mestre Pequinês e espalhados pelo mundo",
+      "featuredLabel": "Em destaque",
+      "othersLabel": "Outros mestres",
+      "openProfile": "Ver perfil",
+      "featuredNote": "Mestres que contribuem e apoiam o projeto da Capoeira4Life dentro da Capoeira Nagô."
+    },
+    "masters": {
+      "modalClose": "Fechar",
+      "instagram": "Instagram",
+      "alf": {
+        "role": "Mestre Capoeira Nagô",
+        "bio": [
+          "Mestre Alf representa a Capoeira Nagô em Malta, levando a tradição do grupo com técnica, musicalidade e presença de roda.",
+          "Clique no Instagram para acompanhar o trabalho e as atividades do grupo."
+        ]
+      },
+      "andre": {
+        "role": "Mestre Capoeira Nagô",
+        "bio": [
+          "Mestre Andre leva a Capoeira Nagô aos Estados Unidos, formando alunos e mantendo viva a linha do Mestre Pequinês.",
+          "Acompanhe as redes para conhecer aulas, eventos e o dia a dia do grupo."
+        ]
+      },
+      "falcao": {
+        "role": "Mestre Capoeira Nagô",
+        "bio": [
+          "Mestre Falcão representa a Capoeira Nagô na Espanha, unindo tradição, jogo e formação de alunos.",
+          "Siga no Instagram para ver treinos, rodas e a presença do grupo no país."
+        ]
+      }
     },
     "cords": {
       "label": "Graduação",

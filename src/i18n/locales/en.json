@@ -204,9 +204,38 @@
       "imageAlt": "Mestre Pequinês, founder of Capoeira Nagô"
     },
     "genealogy": {
-      "label": "Lineage",
-      "title": "Genealogical Tree",
-      "subtitle": "Masters graduated by Mestre Pequinês, spread across the world"
+      "label": "Masters",
+      "title": "Capoeira Nagô Masters",
+      "subtitle": "Graduated by Mestre Pequinês and spread across the world",
+      "featuredLabel": "Featured",
+      "othersLabel": "Other masters",
+      "openProfile": "View profile",
+      "featuredNote": "Masters who contribute to and support the Capoeira4Life project within Capoeira Nagô."
+    },
+    "masters": {
+      "modalClose": "Close",
+      "instagram": "Instagram",
+      "alf": {
+        "role": "Capoeira Nagô Master",
+        "bio": [
+          "Mestre Alf represents Capoeira Nagô in Malta, carrying the group's tradition with technique, musicality and presence in the roda.",
+          "Follow on Instagram to keep up with the group's work and activities."
+        ]
+      },
+      "andre": {
+        "role": "Capoeira Nagô Master",
+        "bio": [
+          "Mestre Andre brings Capoeira Nagô to the United States, training students and keeping Mestre Pequinês' lineage alive.",
+          "Follow the social channels for classes, events and daily life with the group."
+        ]
+      },
+      "falcao": {
+        "role": "Capoeira Nagô Master",
+        "bio": [
+          "Mestre Falcão represents Capoeira Nagô in Spain, combining tradition, game and student development.",
+          "Follow on Instagram for training, rodas and the group's presence in the country."
+        ]
+      }
     },
     "cords": {
       "label": "Graduation",

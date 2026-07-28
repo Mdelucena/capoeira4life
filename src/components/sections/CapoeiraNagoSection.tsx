@@ -1,26 +1,35 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import FadeIn from '../FadeIn'
 import YouTubeEmbed from '../YouTubeEmbed'
+import NagoMasterModal from '../NagoMasterModal'
 import capoeiraNagoLogo from '../../assets/image/capoeira nago.png'
 import pequinesImg from '../../assets/image/mestrepique.png'
 import faixasImg from '../../assets/image/faixas.jpeg'
-import { NAGO_GENEALOGY_ROOT, NAGO_GENEALOGY_ROWS, type GenealogyMember } from '../../data/nagoGenealogy'
+import {
+  NAGO_FEATURED_MASTERS,
+  NAGO_OTHER_MASTERS,
+  type FeaturedMasterId,
+  type GenealogyMember,
+} from '../../data/nagoGenealogy'
 import CountryFlag from '../CountryFlag'
 import './CapoeiraNagoSection.css'
 
 const NAGO_VIDEO_ID = '8y18Pgces8s'
 
-function GenealogyNode({ name, country, countryLabel }: GenealogyMember) {
+function MasterChip({ name, country, countryLabel }: GenealogyMember) {
   return (
-    <div className="nago__tree-node">
-      <span className="nago__tree-name">{name}</span>
-      <CountryFlag code={country} label={countryLabel} className="nago__tree-flag" />
+    <div className="nago__master-chip">
+      <span className="nago__master-chip-name">{name}</span>
+      <CountryFlag code={country} label={countryLabel} className="nago__master-chip-flag" />
     </div>
   )
 }
 
 export default function CapoeiraNagoSection() {
   const { t } = useTranslation()
+  const [activeMasterId, setActiveMasterId] = useState<FeaturedMasterId | null>(null)
+  const activeMaster = NAGO_FEATURED_MASTERS.find((master) => master.id === activeMasterId) ?? null
 
   const cordsSteps = t('nago.cords.steps', { returnObjects: true }) as {
     title: string
@@ -78,20 +87,47 @@ export default function CapoeiraNagoSection() {
             <p className="nago__genealogy-subtitle">{t('nago.genealogy.subtitle')}</p>
           </FadeIn>
 
-          <FadeIn className="nago__tree" delay={150}>
-            <div className="nago__tree-root">
-              <div className="nago__tree-node nago__tree-node--root">
-                {NAGO_GENEALOGY_ROOT}
-              </div>
+          <FadeIn className="nago__masters" delay={120}>
+            <div className="nago__masters-featured">
+              <p className="nago__masters-col-label">{t('nago.genealogy.featuredLabel')}</p>
+              <ul className="nago__masters-featured-list">
+                {NAGO_FEATURED_MASTERS.map((master) => (
+                  <li key={master.id}>
+                    <button
+                      type="button"
+                      className="nago__master-card"
+                      onClick={() => setActiveMasterId(master.id)}
+                    >
+                      <img
+                        src={master.photo}
+                        alt={master.name}
+                        className="nago__master-card-photo"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span className="nago__master-card-info">
+                        <span className="nago__master-card-name">{master.name}</span>
+                        <CountryFlag
+                          code={master.country}
+                          label={master.countryLabel}
+                          className="nago__master-card-flag"
+                        />
+                        <span className="nago__master-card-hint">{t('nago.genealogy.openProfile')}</span>
+                      </span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+              <p className="nago__masters-featured-note">{t('nago.genealogy.featuredNote')}</p>
             </div>
-            <div className="nago__tree-line" aria-hidden="true" />
-            <div className="nago__tree-levels">
-              {NAGO_GENEALOGY_ROWS.map((row) => (
-                <div key={`${row[0].name}-${row[1].name}`} className="nago__tree-row">
-                  <GenealogyNode {...row[0]} />
-                  <GenealogyNode {...row[1]} />
-                </div>
-              ))}
+
+            <div className="nago__masters-others">
+              <p className="nago__masters-col-label">{t('nago.genealogy.othersLabel')}</p>
+              <div className="nago__masters-others-grid">
+                {NAGO_OTHER_MASTERS.map((master) => (
+                  <MasterChip key={master.name} {...master} />
+                ))}
+              </div>
             </div>
           </FadeIn>
         </div>
@@ -155,6 +191,10 @@ export default function CapoeiraNagoSection() {
           </FadeIn>
         </div>
       </article>
+
+      {activeMaster && (
+        <NagoMasterModal master={activeMaster} onClose={() => setActiveMasterId(null)} />
+      )}
     </section>
   )
 }
