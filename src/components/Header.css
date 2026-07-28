@@ -43,9 +43,11 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  width: 100%;
   max-width: 1440px;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
+  margin: 0 auto;
+  padding: 0.875rem clamp(1.25rem, 3.5vw, 2.5rem);
+  box-sizing: border-box;
 }
 
 .header__logo {
@@ -65,9 +67,25 @@
   display: block;
 }
 
-.header__logo--capoeirinha {
-  margin-left: 0.25rem;
+.header__logo--main {
+  margin-right: 0;
+}
+
+.header__logo--nago {
   flex-shrink: 0;
+  margin-left: 0.15rem;
+  margin-right: 0.25rem;
+}
+
+.header__logo--nago img {
+  height: 88px;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+.header__logo--capoeirinha {
+  flex-shrink: 0;
+  margin-left: 0.25rem;
 }
 
 .header__logo--capoeirinha img {
@@ -280,6 +298,11 @@
     height: 56px;
   }
 
+  .header__logo--nago img {
+    height: 76px;
+    max-width: 140px;
+  }
+
   .header__logo--capoeirinha img {
     height: 88px;
   }
@@ -307,18 +330,33 @@
 }
 
 @media (max-width: 900px) {
+  .header__inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .header__logo img {
-    height: 56px;
+    height: 52px;
+  }
+
+  .header__logo--nago {
+    margin-left: 0.1rem;
+    margin-right: 0;
+  }
+
+  .header__logo--nago img {
+    height: 60px;
+    max-width: 110px;
   }
 
   .header__logo--capoeirinha {
     margin-left: auto;
-    margin-right: 0.25rem;
+    margin-right: 0.15rem;
     order: 2;
   }
 
   .header__logo--capoeirinha img {
-    height: 72px;
+    height: 68px;
   }
 
   .header__menu-btn {

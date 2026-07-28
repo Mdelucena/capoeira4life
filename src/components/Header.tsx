@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import FlagIcon from './FlagIcon'
 import { languages, type Language } from '../i18n'
 import capoeirinhaLogo from '../assets/image/capo.png'
+import capoeiraNagoLogo from '../assets/image/capoeira nago.png'
 import './Header.css'
 
 type HeaderProps = {
@@ -12,12 +13,12 @@ type HeaderProps = {
 
 const navItems = [
   { key: 'nav.home', to: '/' },
+  { key: 'nav.capoeiraNago', to: '/capoeira-nago' },
   { key: 'nav.capoeirinha', to: '/capoeirinha' },
   { key: 'nav.academy', to: '/academia' },
   { key: 'nav.coaches', to: '/professores' },
   { key: 'nav.products', to: '/produtos' },
   { key: 'nav.events', to: '/eventos' },
-  { key: 'nav.capoeiraNago', to: '/capoeira-nago' },
 ] as const
 
 function linkClassName(isActive: boolean) {
@@ -39,9 +40,17 @@ export default function Header({ overlay = false }: HeaderProps) {
 
   return (
     <header className={`header ${overlay ? 'header--overlay' : ''}`}>
-      <div className="header__inner container">
-        <Link to="/" className="header__logo" onClick={closeMenu}>
+      <div className="header__inner">
+        <Link to="/" className="header__logo header__logo--main" onClick={closeMenu}>
           <img src="/logo.png" alt={t('a11y.logoAlt')} />
+        </Link>
+
+        <Link
+          to="/capoeira-nago"
+          className="header__logo header__logo--nago"
+          onClick={closeMenu}
+        >
+          <img src={capoeiraNagoLogo} alt={t('footer.nagoAlt')} />
         </Link>
 
         <button
