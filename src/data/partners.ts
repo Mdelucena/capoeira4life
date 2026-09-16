@@ -1,3 +1,5 @@
+import sosMotoLogo from '../assets/image/parceiros/sos moto.avif'
+import mineiroVillageLogo from '../assets/image/parceiros/mineirovillage.jpg'
 import dbroaLogo from '../assets/image/parceiros/Dbroa-logo-1.png'
 import polimaxLogo from '../assets/image/parceiros/polimax.jfif'
 import lambertLogo from '../assets/image/parceiros/lambert.png'
@@ -10,6 +12,18 @@ export type Partner = {
 }
 
 export const PARTNERS: Partner[] = [
+  {
+    id: 'sosmoto',
+    name: 'SOS Motorbike',
+    image: sosMotoLogo,
+    url: 'https://www.sosmotorbike.com/',
+  },
+  {
+    id: 'mineirovillage',
+    name: 'Mineiro Village',
+    image: mineiroVillageLogo,
+    url: 'https://www.instagram.com/mineirovillage/',
+  },
   {
     id: 'lambert',
     name: 'Lambert Sports Clinic',

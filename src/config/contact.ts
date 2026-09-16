@@ -1,7 +1,7 @@
 // DDI + DDD + número, só dígitos. Ex: 5562999999999
-export const WHATSAPP_NUMBER = '447496831095'
+export const WHATSAPP_NUMBER = '447718488996'
 
-export const WHATSAPP_DISPLAY = '+44 7496 831095'
+export const WHATSAPP_DISPLAY = '+44 7718 488996'
 
 export const CONTACT_EMAIL = 'info@capoeira4life.com.br'
 

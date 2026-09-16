@@ -16,6 +16,7 @@ export default function NagoMasterModal({ master, onClose }: NagoMasterModalProp
   const bioRaw = t(`${baseKey}.bio`, { returnObjects: true })
   const bio = Array.isArray(bioRaw) ? (bioRaw as string[]) : [String(bioRaw)]
   const instagram = master.instagram?.trim()
+  const website = master.website?.trim()
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
@@ -79,16 +80,30 @@ export default function NagoMasterModal({ master, onClose }: NagoMasterModalProp
           ))}
         </div>
 
-        {instagram ? (
-          <a
-            href={`https://www.instagram.com/${instagram}/`}
-            className="nago-master-modal__social"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t('nago.masters.instagram')} @{instagram}
-          </a>
-        ) : null}
+        {(instagram || website) && (
+          <div className="nago-master-modal__links">
+            {instagram ? (
+              <a
+                href={`https://www.instagram.com/${instagram}/`}
+                className="nago-master-modal__social"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('nago.masters.instagram')} @{instagram}
+              </a>
+            ) : null}
+            {website ? (
+              <a
+                href={website}
+                className="nago-master-modal__website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('nago.masters.website')}
+              </a>
+            ) : null}
+          </div>
+        )}
       </div>
     </div>
   )

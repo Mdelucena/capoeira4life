@@ -24,7 +24,9 @@ function PartnerCard({
   visitLabel: string
   onSelect?: () => void
 }) {
-  const isMini = slotClass.includes('slot-1') || slotClass.includes('slot-2')
+  const isHidden = slotClass.includes('hidden')
+  const isMini =
+    slotClass.includes('slot-1') || slotClass.includes('slot-2') || isHidden
 
   return (
     <a
@@ -113,6 +115,7 @@ export default function PartnershipsSection() {
     if (enteringId === partnerId) return 'partnerships__card--slot-2 partnerships__card--enter-queue'
 
     const slot = (partnerIndex - active + total) % total
+    if (slot > 2) return 'partnerships__card--hidden'
     return `partnerships__card--slot-${slot}`
   }
 

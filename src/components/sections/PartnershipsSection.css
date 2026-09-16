@@ -179,6 +179,14 @@
   cursor: pointer;
 }
 
+.partnerships__card--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 0;
+  transform: translate(92%, -50%) scale(0.5);
+}
+
 .partnerships__card--slot-1 .partnerships__phrase,
 .partnerships__card--slot-1 .partnerships__visit,
 .partnerships__card--slot-2 .partnerships__phrase,

@@ -215,6 +215,7 @@
     "masters": {
       "modalClose": "Close",
       "instagram": "Instagram",
+      "website": "Website — Brazilian Combat Academy",
       "alf": {
         "role": "Capoeira Nagô Master",
         "bio": [
@@ -234,6 +235,27 @@
         "bio": [
           "Mestre Falcão represents Capoeira Nagô in Spain, combining tradition, game and student development.",
           "Follow on Instagram for training, rodas and the group's presence in the country."
+        ]
+      },
+      "douglas": {
+        "role": "Capoeira Nagô Master",
+        "bio": [
+          "Mestre Douglas represents Capoeira Nagô in Brazil, training students and keeping the group's tradition alive.",
+          "Follow on Instagram for classes, rodas and the master's work."
+        ]
+      },
+      "fabricio": {
+        "role": "Capoeira Nagô Master",
+        "bio": [
+          "Mestre Fabrício brings Capoeira Nagô to England, combining technique, musicality and presence in the roda.",
+          "Follow on Instagram for training, events and daily life with the group."
+        ]
+      },
+      "galo": {
+        "role": "Capoeira Nagô Master",
+        "bio": [
+          "Mestre Galo represents Capoeira Nagô in Austria, carrying Mestre Pequinês' lineage with dedication and tradition.",
+          "Follow on Instagram for the group's activities and presence in the country."
         ]
       }
     },
@@ -477,6 +499,8 @@
     "cta": "Meet the Masters",
     "imageAlt": "Capoeira roda with practitioners in motion",
     "imageAlt2": "Capoeira practitioners in action during roda",
+    "imageAlt3": "A Capoeira4Life community moment",
+    "imageAlt4": "Capoeira4Life roda in London",
     "prevPhoto": "Previous photo",
     "nextPhoto": "Next photo"
   },
@@ -594,6 +618,14 @@
     "whatsappMessage": "Hello! I would like to know more about partnerships and sponsorship with Capoeira4Life.",
     "empty": "No partnerships at the moment.",
     "items": {
+      "sosmoto": {
+        "name": "SOS Motorbike",
+        "phrase": "24/7 motorbike recovery, parts and support across London."
+      },
+      "mineirovillage": {
+        "name": "Mineiro Village",
+        "phrase": "Mineiro flavour and Brazilian culture close to our community."
+      },
       "dbroa": {
         "name": "D'Broa",
         "phrase": "A Brazilian bakery and café with soul, right next to our London community."

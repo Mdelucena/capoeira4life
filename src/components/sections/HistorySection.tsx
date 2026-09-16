@@ -1,13 +1,17 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import FadeIn from '../FadeIn'
+import capoeira1Img from '../../assets/image/capoeira1.jpg'
+import capoeira2Img from '../../assets/image/capoeira2.jpg'
+import capoeira3Img from '../../assets/image/capoeira3.jpg'
 import capoeiraImg from '../../assets/image/capoeira.jpeg'
-import capoeira2Img from '../../assets/image/capoeira2.jpeg'
 import './HistorySection.css'
 
 const HISTORY_IMAGES = [
-  { src: capoeiraImg, altKey: 'history.imageAlt' },
+  { src: capoeira1Img, altKey: 'history.imageAlt' },
   { src: capoeira2Img, altKey: 'history.imageAlt2' },
+  { src: capoeira3Img, altKey: 'history.imageAlt3' },
+  { src: capoeiraImg, altKey: 'history.imageAlt4' },
 ] as const
 
 export default function HistorySection() {
