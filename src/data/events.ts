@@ -4,11 +4,16 @@ import fotoDna2025Img from '../assets/image/eventos/fotodna2025pessoal.jpeg'
 import workshopFumacaImg from '../assets/image/eventos/wordshopfumaca.jpeg'
 import videoDna2025 from '../assets/image/eventos/videodna2025.mp4'
 import flyDna2026Img from '../assets/image/eventos/DNA2026.jpg'
-import graiaDna2026Img from '../assets/image/eventos/graiadna2026.jpeg'
-import alfDna2026Img from '../assets/image/eventos/alfdna26.png'
-import cafundoDna2026Img from '../assets/image/eventos/cafundodna2026.jpeg'
-import feijaoDna2026Img from '../assets/image/eventos/feijao36.png'
-import guinomoDna2026Img from '../assets/image/eventos/guinomo26.png'
+import contraGraiaDna2026Img from '../assets/image/eventos/contramestre-graia-dna2026.jpeg'
+import contraGuinomoDna2026Img from '../assets/image/eventos/contramestre-guinomo-dna26.png'
+import contraFeijaoDna2026Img from '../assets/image/eventos/contramestre-feijao-dna26.png'
+import mestreAlfDna2026Img from '../assets/image/eventos/mestre-alf-dna26.png'
+import mestreSanhacoDna2026Img from '../assets/image/eventos/mestre-sanhaco-dna26.png'
+import professorCafundoDna2026Img from '../assets/image/eventos/professor-cafundo-dna2026.jpeg'
+import professorMilinhaDna2026Img from '../assets/image/eventos/professor-milinha-dna26.png'
+import professorNegretDna2026Img from '../assets/image/eventos/professor-negret-dna26.png'
+import professorPipocaDna2026Img from '../assets/image/eventos/professor-pipoca-dna26.png'
+import professoraAreiaDna2026Img from '../assets/image/eventos/professora-areia-dna26.png'
 import camisaProfDna2026Img from '../assets/image/eventos/roupadnaprofessores2026.jpeg'
 import camisaDna2026Img from '../assets/image/eventos/roupadna2036.jpeg'
 import flyCapoeirinhaImg from '../assets/image/eventos/capoeirinha.jpg'
@@ -30,12 +35,22 @@ export const EVENTS: EventItem[] = [
     image: flyDna2026Img,
     hasDetail: true,
     gallery: [
+      // Fly principal
       flyDna2026Img,
-      graiaDna2026Img,
-      alfDna2026Img,
-      cafundoDna2026Img,
-      feijaoDna2026Img,
-      guinomoDna2026Img,
+      // Contramestres
+      contraGraiaDna2026Img,
+      contraGuinomoDna2026Img,
+      contraFeijaoDna2026Img,
+      // Mestres
+      mestreAlfDna2026Img,
+      mestreSanhacoDna2026Img,
+      // Professores
+      professorCafundoDna2026Img,
+      professorMilinhaDna2026Img,
+      professorNegretDna2026Img,
+      professorPipocaDna2026Img,
+      professoraAreiaDna2026Img,
+      // Camisas
       camisaProfDna2026Img,
       camisaDna2026Img,
     ],

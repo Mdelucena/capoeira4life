@@ -1,3 +1,4 @@
+import brazilPremiumLogo from '../assets/image/parceiros/brazil--premium.jpg'
 import sosMotoLogo from '../assets/image/parceiros/sos moto.avif'
 import mineiroVillageLogo from '../assets/image/parceiros/mineirovillage.jpg'
 import dbroaLogo from '../assets/image/parceiros/Dbroa-logo-1.png'
@@ -12,6 +13,12 @@ export type Partner = {
 }
 
 export const PARTNERS: Partner[] = [
+  {
+    id: 'brazilpremium',
+    name: 'Brazil Premium',
+    image: brazilPremiumLogo,
+    url: 'https://www.instagram.com/brazilpremiumcroydon/',
+  },
   {
     id: 'sosmoto',
     name: 'SOS Motorbike',

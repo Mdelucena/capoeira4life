@@ -94,6 +94,7 @@ export const NAGO_OTHER_MASTERS: GenealogyMember[] = [
   { name: 'Mestre Adilson-SP', country: 'br', countryLabel: 'Brasil' },
   { name: 'Mestre Jacarandá-TO', country: 'br', countryLabel: 'Brasil' },
   { name: 'Mestre Tchoco-GO', country: 'br', countryLabel: 'Brasil' },
+  { name: 'Mestre Caju-GO', country: 'br', countryLabel: 'Brasil' },
 ]
 
 export function getFeaturedMaster(id: FeaturedMasterId) {

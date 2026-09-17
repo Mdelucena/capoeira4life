@@ -6,6 +6,8 @@ import {
 } from '../../config/academy'
 import {
   COQUEIRO_MAPS_URL,
+  EWELL_MAPS_URL,
+  EWELL_WEBSITE_URL,
   PORCHESTER_MAPS_URL,
 } from '../../config/academyVenues'
 import academiaInsideImg from '../../assets/image/academia_inside.jpeg'
@@ -27,14 +29,19 @@ type ScheduleRow = {
   day: string
   class: string
   time: string
-  academyKey: 'moberly' | 'coqueiro' | 'porchester'
+  academyKey: 'moberly' | 'coqueiro' | 'porchester' | 'ewell'
 }
 
-const OTHER_ACADEMY_KEYS = ['coqueiro', 'porchester'] as const
+const OTHER_ACADEMY_KEYS = ['coqueiro', 'porchester', 'ewell'] as const
 
 const OTHER_ACADEMY_MAPS: Record<(typeof OTHER_ACADEMY_KEYS)[number], string> = {
   coqueiro: COQUEIRO_MAPS_URL,
   porchester: PORCHESTER_MAPS_URL,
+  ewell: EWELL_MAPS_URL,
+}
+
+const OTHER_ACADEMY_WEBSITES: Partial<Record<(typeof OTHER_ACADEMY_KEYS)[number], string>> = {
+  ewell: EWELL_WEBSITE_URL,
 }
 
 export default function AcademySection() {
@@ -125,13 +132,24 @@ export default function AcademySection() {
                     {t(`academy.otherVenues.items.${key}.schedule`)}
                   </p>
                   <address>{t(`academy.otherVenues.items.${key}.address`)}</address>
-                  <a
-                    href={OTHER_ACADEMY_MAPS[key]}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {t('academy.otherVenues.openMaps')}
-                  </a>
+                  <div className="academy__other-academies-links">
+                    <a
+                      href={OTHER_ACADEMY_MAPS[key]}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {t('academy.otherVenues.openMaps')}
+                    </a>
+                    {OTHER_ACADEMY_WEBSITES[key] ? (
+                      <a
+                        href={OTHER_ACADEMY_WEBSITES[key]}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {t('academy.otherVenues.openWebsite')}
+                      </a>
+                    ) : null}
+                  </div>
                 </li>
               ))}
             </ul>

@@ -139,22 +139,22 @@
       "venues": {
         "moberly": "Moberly Sports Centre",
         "coqueiro": "The Gym Group London West Hampstead",
-        "porchester": "Porchester Centre"
+        "porchester": "Porchester Centre",
+        "ewell": "Ewell Hall"
       },
       "rows": [
         { "day": "Lunes", "class": "Capoeira para adultos", "time": "18:00 – 19:00", "academyKey": "porchester" },
-        { "day": "Martes", "class": "Capoeirinha", "time": "16:00 – 17:00", "academyKey": "moberly" },
+        { "day": "Martes", "class": "Capoeirinha", "time": "17:45 – 18:45", "academyKey": "ewell" },
         { "day": "Miércoles", "class": "Capoeira para adultos", "time": "19:00 – 20:00", "academyKey": "coqueiro" },
-        { "day": "Jueves", "class": "Capoeirinha", "time": "16:00 – 17:00", "academyKey": "moberly" },
         { "day": "Jueves", "class": "Capoeira para adultos", "time": "19:00 – 20:30", "academyKey": "moberly" },
         { "day": "Viernes", "class": "Capoeira para adultos", "time": "19:00 – 20:00", "academyKey": "coqueiro" },
-        { "day": "Sábado", "class": "Capoeirinha", "time": "14:15 – 15:15", "academyKey": "moberly" },
         { "day": "Sábado", "class": "Capoeira para adultos", "time": "15:15 – 16:30", "academyKey": "moberly" }
       ]
     },
     "otherVenues": {
       "title": "También tenemos clases de capoeira en las siguientes academias",
       "openMaps": "Abrir en Google Maps",
+      "openWebsite": "Visitar sitio",
       "items": {
         "coqueiro": {
           "name": "The Gym Group London West Hampstead",
@@ -167,6 +167,12 @@
           "coach": "Graduado Esquilo",
           "schedule": "Lunes, 18:00 – 19:00 (adultos)",
           "address": "Queensway, Porchester Rd, London W2 5HS"
+        },
+        "ewell": {
+          "name": "Ewell Hall",
+          "coach": "Clases Capoeirinha",
+          "schedule": "Todos los martes, 17:45 – 18:45",
+          "address": "7 London Rd, Ewell, Epsom KT17 2AY, Reino Unido"
         }
       }
     },
@@ -437,20 +443,8 @@
         {
           "day": "Martes",
           "class": "Capoeirinha",
-          "time": "16:00 – 17:00",
-          "venue": "Moberly Sports Centre"
-        },
-        {
-          "day": "Jueves",
-          "class": "Capoeirinha",
-          "time": "16:00 – 17:00",
-          "venue": "Moberly Sports Centre"
-        },
-        {
-          "day": "Sábado",
-          "class": "Capoeirinha",
-          "time": "14:15 – 15:15",
-          "venue": "Moberly Sports Centre"
+          "time": "17:45 – 18:45",
+          "venue": "Ewell Hall"
         }
       ]
     },
@@ -618,6 +612,10 @@
     "whatsappMessage": "¡Hola! Quiero saber más sobre alianzas y patrocinio con Capoeira4Life.",
     "empty": "Ninguna alianza por el momento.",
     "items": {
+      "brazilpremium": {
+        "name": "Brazil Premium",
+        "phrase": "Productos brasileños y sabor de casa en Croydon."
+      },
       "sosmoto": {
         "name": "SOS Motorbike",
         "phrase": "Recuperación, piezas y soporte para motos 24/7 en Londres."
@@ -814,7 +812,7 @@
       },
       "dnv-cultural-2026": {
         "title": "DNA Cultural 2026",
-        "description": "Nuevo encuentro de Capoeira Nagô en Londres, para adultos y niños, con la presentación de Capoeirinha Nagô Kids UK."
+        "description": "DNA Cultural Capoeira Nagô, Londres (2ª Edición). Workshops, roda, cena y camiseta incluidos. £65."
       }
     },
     "details": {
@@ -843,14 +841,14 @@
       },
       "dnv-cultural-2026": {
         "date": "23 y 24 de octubre de 2026",
-        "eyebrow": "Save the date",
-        "headline": "Tu identidad en la roda",
-        "lead": "El 23 y 24 de octubre de 2026, Capoeira4Life presenta el DNA Cultural: dos días de capoeira en Londres, para adultos y niños, celebrando la identidad y las raíces de la Capoeira Nagô.",
+        "eyebrow": "2ª Edición, Londres",
+        "headline": "DNA Cultural Capoeira Nagô",
+        "lead": "DNA Cultural Capoeira Nagô, Londres (2ª Edición). Dos días de workshops, roda, musicalidad y convivencia con maestros y profesores invitados.",
         "body": [
-          "Una edición pensada para toda la comunidad: adultos y niños entrenan, juegan y comparten la roda, con talleres, musicalidad y mucho intercambio de conocimiento.",
-          "También presentaremos Capoeirinha Nagô Kids UK, la mascota creada para acercar a los niños a la capoeira con alegría y propósito, haciendo cada clase más divertida e inspiradora.",
-          "El evento está organizado por el Profesor Samurai y supervisado por el Mestre Fabricio, reuniendo a maestros, profesores y alumnos en un mismo espacio de celebración.",
-          "Marca la fecha: 23 y 24 de octubre. Será un fin de semana para vivir la identidad Nagô dentro y fuera de la roda."
+          "Viernes, 23 de octubre de 2026, de 18:00 a 21:40. Workshops y actividades con el Contramestre Graia (Murcia, España), con círculos y actividades a lo largo de la noche. Cena: strogonoff de pollo (marmita).",
+          "Sábado, 24 de octubre de 2026, de 9:00 a 11:30. Integración musical, workshop y roda con el Contramestre Guinomo (Ancona, Italia).",
+          "£65,00: incluye camiseta, strogonoff, workshop y roda.",
+          "Organizado por el Profesor Samurai. Supervisado por el Mestre Fabricio."
         ]
       }
     }

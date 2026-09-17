@@ -11,3 +11,9 @@ const porchesterQuery = encodeURIComponent(
 export const PORCHESTER_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${porchesterQuery}`
 
 export const PORCHESTER_EMBED_URL = `https://maps.google.com/maps?q=${porchesterQuery}&output=embed`
+
+const ewellQuery = encodeURIComponent('Ewell Hall, 7 London Rd, Ewell, Epsom KT17 2AY, United Kingdom')
+
+export const EWELL_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${ewellQuery}`
+
+export const EWELL_WEBSITE_URL = 'https://ewellhall.uk/'
