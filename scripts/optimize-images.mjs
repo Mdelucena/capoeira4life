@@ -71,6 +71,18 @@ async function main() {
   await compressDir('golpes', /\.png$/i, 1000, 80)
   await compressDir('eventos', /\.(png|jpe?g)$/i, 1400, 78)
 
+  for (const file of ['capoeira1.jpg', 'capoeira2.jpg', 'capoeira3.jpg', 'capoeira.jpeg']) {
+    const input = path.join(root, file)
+    try {
+      const before = await sizeMb(input)
+      await compressJpegInPlace(input, 1400, 78)
+      const after = await sizeMb(input)
+      console.log(`${file}: ${before.toFixed(2)}MB → ${after.toFixed(2)}MB`)
+    } catch (err) {
+      console.warn(`skip ${file}:`, err.message)
+    }
+  }
+
   for (const file of ['capo.png', 'capoeira nago.png', 'mestrepique.png']) {
     const input = path.join(root, file)
     try {
