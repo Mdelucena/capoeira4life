@@ -146,8 +146,9 @@
         { "day": "Segunda", "class": "Capoeira para adultos", "time": "18:00 – 19:00", "academyKey": "porchester" },
         { "day": "Terça", "class": "Capoeirinha", "time": "17:45 – 18:45", "academyKey": "ewell" },
         { "day": "Quarta", "class": "Capoeira para adultos", "time": "19:00 – 20:00", "academyKey": "coqueiro" },
-        { "day": "Quinta", "class": "Capoeira para adultos", "time": "19:00 – 20:30", "academyKey": "moberly" },
+        { "day": "Quinta", "class": "Capoeira para adultos", "time": "Aulas em breve", "academyKey": "moberly" },
         { "day": "Sexta", "class": "Capoeira para adultos", "time": "19:00 – 20:00", "academyKey": "coqueiro" },
+        { "day": "Sábado", "class": "Capoeirinha", "time": "14:15 – 15:15", "academyKey": "moberly" },
         { "day": "Sábado", "class": "Capoeira para adultos", "time": "15:15 – 16:30", "academyKey": "moberly" }
       ]
     },
@@ -445,6 +446,12 @@
           "class": "Capoeirinha",
           "time": "17:45 – 18:45",
           "venue": "Ewell Hall"
+        },
+        {
+          "day": "Sábado",
+          "class": "Capoeirinha",
+          "time": "14:15 – 15:15",
+          "venue": "Moberly Sports Centre"
         }
       ]
     },

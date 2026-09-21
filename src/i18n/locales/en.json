@@ -146,8 +146,9 @@
         { "day": "Monday", "class": "Adult capoeira", "time": "6:00 PM – 7:00 PM", "academyKey": "porchester" },
         { "day": "Tuesday", "class": "Capoeirinha", "time": "5:45 PM – 6:45 PM", "academyKey": "ewell" },
         { "day": "Wednesday", "class": "Adult capoeira", "time": "7:00 PM – 8:00 PM", "academyKey": "coqueiro" },
-        { "day": "Thursday", "class": "Adult capoeira", "time": "7:00 PM – 8:30 PM", "academyKey": "moberly" },
+        { "day": "Thursday", "class": "Adult capoeira", "time": "Classes coming soon", "academyKey": "moberly" },
         { "day": "Friday", "class": "Adult capoeira", "time": "7:00 PM – 8:00 PM", "academyKey": "coqueiro" },
+        { "day": "Saturday", "class": "Capoeirinha", "time": "2:15 PM – 3:15 PM", "academyKey": "moberly" },
         { "day": "Saturday", "class": "Adult capoeira", "time": "3:15 PM – 4:30 PM", "academyKey": "moberly" }
       ]
     },
@@ -445,6 +446,12 @@
           "class": "Capoeirinha",
           "time": "5:45 PM – 6:45 PM",
           "venue": "Ewell Hall"
+        },
+        {
+          "day": "Saturday",
+          "class": "Capoeirinha",
+          "time": "2:15 PM – 3:15 PM",
+          "venue": "Moberly Sports Centre"
         }
       ]
     },
